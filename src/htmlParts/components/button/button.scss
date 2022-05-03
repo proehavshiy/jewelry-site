@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   box-sizing: border-box;
-  background: $colorMain;
+  background: $colorBg;
   color: $colorBg;
   fill: $colorBg;
   border-radius: 4px;
@@ -15,6 +15,6 @@
   transition: $linkTransition;
 
   &:hover {
-    background-color: $colorMainDark;
+    background-color: $colorAccent;
   }
 }

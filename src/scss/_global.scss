@@ -10,24 +10,26 @@
   position: relative;
 
 
-  @media (max-width: $breakpoint992) {
-    max-width: 970px;
-  }
+  // @media (max-width: $breakpoint992) {
+  //   max-width: 970px;
+  // }
 
-  @media (max-width: $breakpoint768) {
-    max-width: 750px;
-  }
+  // @media (max-width: $breakpoint768) {
+  //   max-width: 750px;
+  // }
 
-  @media (max-width: $breakpoint480) {
-    max-width: none;
-  }
+  // @media (max-width: $breakpoint480) {
+  //   max-width: none;
+  // }
 }
 
 // * Body
 
 body {
   font-family: $fontMain;
-  font-weight: 300;
+  font-weight: 400;
+  font-style: normal;
+  color: $colorDark;
 
   &.locked {
     // стиль для боди при открытом бургер менб, чтобы не прокручивался конент под меню

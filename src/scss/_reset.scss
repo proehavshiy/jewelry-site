@@ -4,7 +4,7 @@
   border: 0;
 }
 
-*, 
+*,
 *:before,
 *::after {
   -moz-box-sizing: border-box;
@@ -30,6 +30,10 @@ body {
 
 input::-ms-clear {
   display: none;
+}
+
+input:focus {
+  outline: none;
 }
 
 button {
@@ -58,10 +62,10 @@ img {
   vertical-align: top;
 }
 
-h1, 
-h2, 
-h3, 
-h4, 
+h1,
+h2,
+h3,
+h4,
 h5,
 h6 {
   font-weight: inherit;
