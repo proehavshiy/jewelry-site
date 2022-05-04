@@ -3,20 +3,20 @@
 // Container
 
 .container {
-  max-width: ($containerWidth + $containerPadding) + px; // макс ширина контейнера
+  max-width: 1920px; // макс ширина контейнера
   width: 100%;
   margin: 0 auto;
-  padding: 0 $containerSidePadding+px;
+  padding: 0 100px;
   position: relative;
 
 
-  // @media (max-width: $breakpoint992) {
-  //   max-width: 970px;
-  // }
+  @media (max-width: $breakpoint1280) {
+    padding: 0 50px;
+  }
 
-  // @media (max-width: $breakpoint768) {
-  //   max-width: 750px;
-  // }
+  @media (max-width: $breakpoint768) {
+    padding: 0 10px;
+  }
 
   // @media (max-width: $breakpoint480) {
   //   max-width: none;

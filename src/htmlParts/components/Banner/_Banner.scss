@@ -1,0 +1,119 @@
+.banner {
+  display: flex;
+  justify-content: space-between;
+
+  // .banner_promo
+
+  &_promo {
+    flex-flow: row-reverse;
+    margin-top: 94px; // 50 + 44 из-за картинки
+    margin-bottom: 94px; // 50 + 44 из-за картинки
+  }
+
+  // .banner_bonus
+
+  &_bonus {
+    border-right: 1px solid #CECBCB;
+  }
+
+  // .banner__demo
+
+  &__demo {
+    width: 990px;
+    height: 576px;
+
+    background-color: $colorMint;
+
+    position: relative;
+  }
+
+  // .banner__img
+
+  &__img {
+    width: 698px;
+    height: 664px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  // banner__heading
+
+  &__heading {
+    line-height: 140%;
+    color: #3A3E46;
+
+    @media (max-width: $breakpoint1366) {
+      font-size: 36px;
+    }
+
+    @media (max-width: $breakpoint1024) {
+      font-size: 27px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      font-size: 24px;
+    }
+
+
+    // banner__heading_promo
+    &_promo {
+      font-size: 65px;
+
+      margin-bottom: 30px;
+
+    }
+
+    // banner__heading_bonus
+    &_bonus {
+      font-size: 52px;
+
+      margin-bottom: 40px;
+    }
+
+  }
+
+  // .banner__info
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+
+    // banner__info_bonus
+    &_bonus {
+      max-width: 435px;
+    }
+
+    // banner__info_promo
+    &_promo {
+      max-width: 553px;
+    }
+  }
+
+  // .banner__text
+
+  &__text {
+
+    line-height: 150%;
+
+    // .banner__text_bonus
+
+    &_bonus {
+      font-size: 18px;
+
+      margin-bottom: 50px;
+    }
+
+    // .banner__text_promo
+
+    &_promo {
+      font-size: 22px;
+      text-transform: uppercase;
+
+      margin-bottom: 55px;
+    }
+  }
+}

@@ -34,3 +34,14 @@
     }
   }
 }
+
+@mixin nav-hover {
+  cursor: pointer;
+  border-bottom: 4px solid transparent;
+  transition: $linkTransition;
+
+  &:hover {
+    opacity: .7;
+    border-bottom: 4px solid #F6D5CC;
+  }
+}

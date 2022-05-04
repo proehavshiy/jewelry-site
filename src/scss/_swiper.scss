@@ -1,0 +1,43 @@
+.wrapperrr {
+  width: 100%;
+}
+
+
+.swiper {
+  // width: 600px;
+  // height: 300px;
+}
+
+
+.swiper-slide {}
+
+.promo {
+  width: 50%;
+  display: flex;
+  min-width: 0;
+  // .promo__about
+
+  &__about {}
+
+  // .promo__heading
+
+  &__heading {}
+
+  // .promo__subheading
+
+  &__subheading {}
+
+  // .promo__button
+
+  &__button {}
+
+  // .promo__demo
+
+  &__demo {
+    width: 100%;
+
+    &>img {
+      width: 100%;
+    }
+  }
+}

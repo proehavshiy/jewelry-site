@@ -8,9 +8,59 @@
 <body>
   <!-- Header -->
   @@include('./htmlParts/_header.html',{})
+  <section class="promo">
+    <div class="container">
+      <!-- Slider main container -->
+      <div class="swiper container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            @@include('./htmlParts/components/Banner/_Banner_promo.html',{})
+          </div>
+          <div class="swiper-slide">
+            @@include('./htmlParts/components/Banner/_Banner_promo.html',{})
+          </div>
+          <div class="swiper-slide">
+            @@include('./htmlParts/components/Banner/_Banner_promo.html',{})
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    @@include('./htmlParts/components/DecorTabs/_DecorTabs.html',{})
+  </section>
+  @@include('./htmlParts/components/Catalog/_Catalog.html')
 
   <!-- main content -->
   <main>
+
+    <!-- @@include('./htmlParts/_swiper.html') -->
+
+    <!-- @@include('./htmlParts/components/Heading/_heading.html',{
+    "title":"Главная"
+    }) -->
+
+    <!-- @@include('./htmlParts/components/button/button.html',{
+    "title":"Посмотреть все"
+    })
+
+    @@include('./htmlParts/components/Banner/_Banner_promo.html',{})
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    @@include('./htmlParts/components/Banner/_Banner_bonus.html',{})
+
+    @@include('./htmlParts/components/DecorTabs/_DecorTabs.html',{}) -->
+
     <!-- <img width="150px" src="@img/Pug.webp" alt="pug1"> -->
     <!-- <h1>Home page</h1> -->
     <!-- <ul class="grid-box">
@@ -28,6 +78,7 @@
       </li>
     </ul> -->
   </main>
+  <!-- @@include('htmlParts/_header-burger.html') -->
 
   <!-- Footer -->
   <!-- @@include('htmlParts/_footer.html') -->

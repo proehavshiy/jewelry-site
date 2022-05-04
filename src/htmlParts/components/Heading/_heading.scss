@@ -1,0 +1,29 @@
+.heading {
+  font-size: 52px;
+  line-height: 140%;
+  color: #3A3E46;
+
+  // heading_card
+
+  &_card {
+    text-align: start;
+  }
+
+  // heading_section
+
+  &_section {
+    text-align: center;
+  }
+
+  @media (max-width: $breakpoint1366) {
+    font-size: 36px;
+  }
+
+  @media (max-width: $breakpoint1024) {
+    font-size: 27px;
+  }
+
+  @media (max-width: $breakpoint768) {
+    font-size: 24px;
+  }
+}

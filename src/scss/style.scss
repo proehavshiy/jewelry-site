@@ -37,4 +37,46 @@
 
 // * Sections SCSS files imports
 @import "_header";
+@import "../htmlParts/components/Navbar/navbar";
+@import '_header-burger';
+// @import '_swiper';
+@import'../htmlParts/components/Heading/_heading';
+@import'../htmlParts/components/button/button.scss';
+@import'../htmlParts/components/DecorTabs/_DecorTabs.scss';
+@import'../htmlParts/components/Banner/Banner';
+@import'../htmlParts/components/Catalog/Catalog';
 // @import"_footer";
+
+// @import '../../node_modules/swiper/swiper.scss';
+@import '../../node_modules/swiper/swiper-bundle';
+// @import '../../node_modules/swiper/modules/navigation/navigation.scss';
+
+
+// promo
+
+.promo {
+  position: relative;
+  margin-bottom: 140px;
+}
+
+.swiper-button-prev {
+  position: absolute;
+  left: 44.5px;
+  top: 50%;
+
+  &:after {
+    font-size: 27px;
+    color: #3A3E46;
+  }
+}
+
+.swiper-button-next {
+  position: absolute;
+  right: 44.5px;
+  top: 50%;
+
+  &:after {
+    font-size: 27px;
+    color: #3A3E46;
+  }
+}

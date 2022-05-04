@@ -1,20 +1,46 @@
 .button {
-  display: flex;
-  justify-content: center;
+  align-self: flex-start;
+
+  padding: 10px 70px;
+  background-color: transparent;
+
+  font-size: 22px;
+  line-height: 118%;
+  color: $colorDark;
+
+  border: 1px solid $colorDark;
   box-sizing: border-box;
-  background: $colorBg;
-  color: $colorBg;
-  fill: $colorBg;
   border-radius: 4px;
-  font-family: inherit;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 1;
+
   cursor: pointer;
   transition: $linkTransition;
 
+  // в свайпере
+  &_promo {
+    @media (max-width: $breakpoint1366) {
+      font-size: 18px;
+      line-height: 116%;
+    }
+  }
+
   &:hover {
-    background-color: $colorAccent;
+    background-color: $colorMint;
+    border: 1px solid $colorMint;
+    color: $colorBg;
+  }
+
+  @media (max-width: $breakpoint1280) {
+    font-size: 18px;
+    line-height: 116%;
+  }
+
+  @media (max-width: $breakpoint1024) {
+    padding: 8px 55px;
+  }
+
+  @media (max-width: $breakpoint768) {
+    padding: 6px 40px;
+    font-size: 14px;
+    line-height: 121%;
   }
 }

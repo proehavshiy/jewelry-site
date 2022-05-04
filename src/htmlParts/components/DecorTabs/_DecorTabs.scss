@@ -1,0 +1,79 @@
+.decore-tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &>*:not(:last-child) {
+    margin-right: 30px;
+
+    @media (max-width: $breakpoint1280) {
+      margin-right: 23px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      margin-right: 15px;
+    }
+  }
+
+  // .decore-tabs__item
+
+  &__item {
+    background-color: $colorAccentActive;
+    border-radius: 50%;
+    // .decore-tabs__item_last
+
+    &_last {
+      width: 23px;
+      height: 23px;
+
+      @media (max-width: $breakpoint1280) {
+        width: 18px;
+        height: 18px;
+      }
+
+      @media (max-width: $breakpoint768) {
+        width: 11px;
+        height: 11px;
+      }
+    }
+
+    // .decore-tabs__item_middle
+
+    &_middle {
+      width: 35px;
+      height: 35px;
+
+      @media (max-width: $breakpoint1280) {
+        width: 26px;
+        height: 26px;
+      }
+
+      @media (max-width: $breakpoint768) {
+        width: 17px;
+        height: 17px;
+      }
+    }
+
+    // .decore-tabs__item_center
+
+    &_center {
+      width: 60px;
+      height: 60px;
+      background-color: transparent;
+      background-image: url('../img/decorTab.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      @media (max-width: $breakpoint1280) {
+        width: 45px;
+        height: 45px;
+      }
+
+      @media (max-width: $breakpoint768) {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+}
