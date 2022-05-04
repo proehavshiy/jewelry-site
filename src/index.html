@@ -32,7 +32,209 @@
     <div class="swiper-button-next"></div>
     @@include('./htmlParts/components/DecorTabs/_DecorTabs.html',{})
   </section>
+  <!-- каталог -->
   @@include('./htmlParts/components/Catalog/_Catalog.html')
+  <!-- новинки -->
+  <section class="new-positions">
+    <div class="container">
+      <div class="new-positions__heading-wrapper">
+        @@include('./htmlParts/components/Heading/_heading_section.html',{
+        "title":"Новинки"
+        })
+      </div>
+      <ul class="new-positions__wrapper">
+        <li class="new-positions__item">
+          <div class="card-new card-new_regular">
+            <div class="card-new__heading">
+              <p>Название</p>
+              <p>коллекции</p>
+            </div>
+          </div>
+        </li>
+        <li class="new-positions__item">
+          <div class="card-new card-new_big">
+            <div class="card-new__heading">
+              <p>Название</p>
+              <p>коллекции</p>
+            </div>
+          </div>
+        </li>
+        <li class="new-positions__item">
+          <div class="card-new card-new_regular">
+            <div class="card-new__heading">
+              <p>Название</p>
+              <p>коллекции</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="new-positions__button-wrapper">
+        @@include('./htmlParts/components/button/button.html',{
+        "title": "Все новинки",
+        })
+      </div>
+    </div>
+  </section>
+
+  <!-- распродажа -->
+  <section class="sale">
+    <div class="container">
+      <div class="sale__heading-wrapper">
+        @@include('./htmlParts/components/Heading/_heading_section.html',{
+        "title":"Распродажа"
+        })
+      </div>
+      <ul class="sale__wrapper">
+        <li class="sale__card">
+          <div class="card-sale">
+            <div class="card-sale__info">
+              <img src="../img/sale1.jpg" alt="sale card image" class="card-sale__img">
+              <div class="card-sale__heading">
+                Золотое кольцо
+                с бриллиантом
+              </div>
+            </div>
+            <div class="card-sale__price">
+              <div class="card-sale__old-price">99999.99</div>
+              <div class="card-sale__new-price">20 000 ₽</div>
+            </div>
+            <a href="#" class="button card-sale__button" target="_blank" rel="noreferrer noopener">Купить</a>
+            <!-- @@include('./htmlParts/components/button/button.html',{
+                    "title": "Купить",
+                    }) -->
+            <span class="card-sale__percent">— 20%</span>
+          </div>
+        </li>
+        <li class="sale__card">
+          <div class="card-sale">
+            <div class="card-sale__info">
+              <img src="../img/sale2.jpg" alt="sale card image" class="card-sale__img">
+              <div class="card-sale__heading">
+                Золотое кольцо
+                с бриллиантом
+              </div>
+            </div>
+            <div class="card-sale__price">
+              <div class="card-sale__old-price">99999.99</div>
+              <div class="card-sale__new-price">20 000 ₽</div>
+            </div>
+            <a href="#" class="button card-sale__button" target="_blank" rel="noreferrer noopener">Купить</a>
+            <!-- @@include('./htmlParts/components/button/button.html',{
+            "title": "Купить",
+            }) -->
+            <span class="card-sale__percent">— 20%</span>
+          </div>
+        </li>
+        <li class="sale__card">
+          <div class="card-sale">
+            <div class="card-sale__info">
+              <img src="../img/sale2.jpg" alt="sale card image" class="card-sale__img">
+              <div class="card-sale__heading">
+                Золотое кольцо
+                с бриллиантом
+              </div>
+            </div>
+            <div class="card-sale__price">
+              <div class="card-sale__old-price">99999.99</div>
+              <div class="card-sale__new-price">20 000 ₽</div>
+            </div>
+            <a href="#" class="button card-sale__button" target="_blank" rel="noreferrer noopener">Купить</a>
+            <!-- @@include('./htmlParts/components/button/button.html',{
+            "title": "Купить",
+            }) -->
+            <span class="card-sale__percent">— 20%</span>
+          </div>
+        </li>
+        <li class="sale__card">
+          <div class="card-sale">
+            <div class="card-sale__info">
+              <img src="../img/sale3.jpg" alt="sale card image" class="card-sale__img">
+              <div class="card-sale__heading">
+                Золотое кольцо
+                с бриллиантом
+              </div>
+            </div>
+            <div class="card-sale__price">
+              <div class="card-sale__old-price">99999.99</div>
+              <div class="card-sale__new-price">20 000 ₽</div>
+            </div>
+            <a href="#" class="button card-sale__button" target="_blank" rel="noreferrer noopener">Купить</a>
+            <!-- @@include('./htmlParts/components/button/button.html',{
+            "title": "Купить",
+            }) -->
+            <span class="card-sale__percent">— 20%</span>
+          </div>
+        </li>
+        <li class="sale__card">
+          <div class="card-sale">
+            <div class="card-sale__info">
+              <img src="../img/sale4.jpg" alt="sale card image" class="card-sale__img">
+              <div class="card-sale__heading">
+                Золотое кольцо
+                с бриллиантом
+              </div>
+            </div>
+            <div class="card-sale__price">
+              <div class="card-sale__old-price">99999.99</div>
+              <div class="card-sale__new-price">20 000 ₽</div>
+            </div>
+            <a href="#" class="button card-sale__button" target="_blank" rel="noreferrer noopener">Купить</a>
+            <!-- @@include('./htmlParts/components/button/button.html',{
+            "title": "Купить",
+            }) -->
+            <span class="card-sale__percent">— 20%</span>
+          </div>
+        </li>
+        <li class="sale__card">
+          <div class="card-sale">
+            <div class="card-sale__info">
+              <img src="../img/sale5.jpg" alt="sale card image" class="card-sale__img">
+              <div class="card-sale__heading">
+                Золотое кольцо
+                с бриллиантом
+              </div>
+            </div>
+            <div class="card-sale__price">
+              <div class="card-sale__old-price">99999.99</div>
+              <div class="card-sale__new-price">20 000 ₽</div>
+            </div>
+            <a href="#" class="button card-sale__button" target="_blank" rel="noreferrer noopener">Купить</a>
+            <!-- @@include('./htmlParts/components/button/button.html',{
+            "title": "Купить",
+            }) -->
+            <span class="card-sale__percent">— 20%</span>
+          </div>
+        </li>
+        <li class="sale__card">
+          <div class="card-sale">
+            <div class="card-sale__info">
+              <img src="../img/sale6.jpg" alt="sale card image" class="card-sale__img">
+              <div class="card-sale__heading">
+                Золотое кольцо
+                с бриллиантом
+              </div>
+            </div>
+            <div class="card-sale__price">
+              <div class="card-sale__old-price">99999.99</div>
+              <div class="card-sale__new-price">20 000 ₽</div>
+            </div>
+            <a href="#" class="button card-sale__button" target="_blank" rel="noreferrer noopener">Купить</a>
+            <!-- @@include('./htmlParts/components/button/button.html',{
+            "title": "Купить",
+            }) -->
+            <span class="card-sale__percent">— 20%</span>
+          </div>
+        </li>
+      </ul>
+      <div class="sale__button-wrapper">
+        @@include('./htmlParts/components/button/button.html',{
+        "title": "Посмотреть все",
+        })
+      </div>
+    </div>
+  </section>
+
+  <!-- бонусная программа -->
 
   <!-- main content -->
   <main>
