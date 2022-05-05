@@ -2,9 +2,9 @@
   width: 100%;
   height: 100%;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: flex-start;
 
   position: fixed;
   top: 0;
@@ -35,6 +35,11 @@
     background: #FFFFFF;
 
     position: relative;
+
+    @media (max-width: $breakpoint768) {
+      max-width: calc(275/320*100%);
+      height: 100%;
+    }
   }
 
   // .menu-popup__close-btn
