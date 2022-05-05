@@ -11,6 +11,10 @@
       justify-content: space-between;
       align-items: center;
 
+      @media (max-width: $breakpoint1280) {
+        display: none;
+      }
+
       // отступы между li
       & .nav-bar__container {
         &>.nav-bar__item:not(:last-child) {
@@ -18,6 +22,10 @@
 
           @media (max-width: $breakpoint1920) {
             margin-right: 30px;
+          }
+
+          @media (max-width: $breakpoint1366) {
+            min-height: 26px;
           }
         }
 
@@ -33,6 +41,10 @@
           @media (max-width: $breakpoint1920) {
             font-size: 16px;
             line-height: 1.5;
+          }
+
+          @media (max-width: $breakpoint1366) {
+            min-height: 65px;
           }
         }
       }
@@ -50,7 +62,7 @@
           font-size: 16px;
           line-height: 1.5;
 
-          margin: 0 35px 0 auto;
+          margin: 0 37px 0 auto;
         }
       }
     }
@@ -148,12 +160,20 @@
 
       &>*:not(:last-child) {
         margin-right: 34px;
+
+        @media (max-width: $breakpoint1920) {
+          margin-right: 44px;
+        }
       }
 
       &>.social-bar__item {
         display: flex;
         align-items: center;
         min-height: 70px;
+
+        @media (max-width: $breakpoint1366) {
+          min-height: 65px;
+        }
       }
     }
 
