@@ -15,15 +15,15 @@
 
   // .header__label
 
-  &__label {}
+  // &__label {}
 
-  // .header__search-input
+  // // .header__search-input
 
-  &__search-input {}
+  // &__search-input {}
 
   // .header__submit
 
-  &__submit {}
+  // &__submit {}
 
   // .header__logo
 
@@ -225,99 +225,99 @@
   }
 }
 
-.social-bar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+// .social-bar {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
 
-  &>*:not(:last-child) {
-    margin-right: 34px;
-  }
+//   &>*:not(:last-child) {
+//     margin-right: 34px;
+//   }
 
-  // .social-bar__link-wrapper
+//   // .social-bar__link-wrapper
 
-  &__link-wrapper {
-    display: flex;
-    align-items: center;
-    min-height: 70px;
+//   &__link-wrapper {
+//     display: flex;
+//     align-items: center;
+//     min-height: 70px;
 
-    @include nav-hover;
-  }
+//     @include nav-hover;
+//   }
 
-  // .social-bar__link
+//   // .social-bar__link
 
-  &__link {}
-}
+//   &__link {}
+// }
 
-.header {
+// .header {
 
-  // .header__label
+//   // .header__label
 
-  &__label {}
+//   &__label {}
 
-  // .header__search-input
+//   // .header__search-input
 
-  &__search-input {}
+//   &__search-input {}
 
-  // .header__submit
+//   // .header__submit
 
-  &__submit {}
-}
+//   &__submit {}
+// }
 
 // input
 
-.search {
+// .search {
 
-  // search_header
-  &_header {
-    width: 287px;
+//   // search_header
+//   &_header {
+//     width: 287px;
 
-    display: flex;
+//     display: flex;
 
-    @media (max-width: $breakpoint1024) {
-      display: none;
-    }
-  }
+//     @media (max-width: $breakpoint1024) {
+//       display: none;
+//     }
+//   }
 
-  // search_burger
-  &_header {
-    display: flex;
+//   // search_burger
+//   &_header {
+//     display: flex;
 
-  }
+//   }
 
-  // .search__input
+//   // .search__input
 
-  &__input {
-    width: 100%;
-    height: 100%;
+//   &__input {
+//     width: 100%;
+//     height: 100%;
 
-    box-sizing: border-box;
-    padding: 3px 0;
-    color: $colorDark;
-    border-bottom: 1px solid $colorGrey;
+//     box-sizing: border-box;
+//     padding: 3px 0;
+//     color: $colorDark;
+//     border-bottom: 1px solid $colorGrey;
 
-    &::placeholder {
-      font-size: 18px;
-      line-height: 1.1818;
-      color: $colorGrey;
-    }
+//     &::placeholder {
+//       font-size: 18px;
+//       line-height: 1.1818;
+//       color: $colorGrey;
+//     }
 
-    &:focus {
-      border-bottom: 1px solid $colorDark;
-      caret-color: $colorDark;
+//     &:focus {
+//       border-bottom: 1px solid $colorDark;
+//       caret-color: $colorDark;
 
-      &::placeholder {
-        color: $colorDark
-      }
-    }
-  }
+//       &::placeholder {
+//         color: $colorDark
+//       }
+//     }
+//   }
 
-  // .search__submit
+//   // .search__submit
 
-  &__submit {
-    width: 24px;
-    height: 24px;
+//   &__submit {
+//     width: 24px;
+//     height: 24px;
 
-    background: transparent;
-  }
-}
+//     background: transparent;
+//   }
+// }

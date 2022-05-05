@@ -2,6 +2,14 @@
   display: flex;
   justify-content: space-between;
 
+  position: relative;
+
+  // banner_news
+
+  &_news {
+    flex-flow: row-reverse;
+  }
+
   // .banner_promo
 
   &_promo {
@@ -19,30 +27,70 @@
   // .banner__demo
 
   &__demo {
-    width: 990px;
-    height: 576px;
+
 
     background-color: $colorMint;
 
     position: relative;
+
+    // banner__demo_news
+
+    &_news {
+      width: auto;
+      height: auto;
+    }
+
+    // banner__demo_bonus
+
+    &_bonus {
+      width: 990px;
+      height: 576px;
+    }
+
+    // banner__demo_promo
+
+    &_promo {
+      width: 990px;
+      height: 576px;
+    }
   }
 
   // .banner__img
 
   &__img {
-    width: 698px;
-    height: 664px;
+    // banner__img_news
 
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    &_news {
+      width: 699px;
+      height: 521px;
+    }
+
+    // banner__img_bonus
+
+    &_bonus {
+      width: 698px;
+      height: 664px;
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &_promo {
+      width: 759px;
+      height: 664px;
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
 
   // banner__heading
 
   &__heading {
-    line-height: 140%;
     color: #3A3E46;
 
     @media (max-width: $breakpoint1366) {
@@ -61,6 +109,7 @@
     // banner__heading_promo
     &_promo {
       font-size: 65px;
+      line-height: 140%;
 
       margin-bottom: 30px;
 
@@ -69,6 +118,17 @@
     // banner__heading_bonus
     &_bonus {
       font-size: 52px;
+      line-height: 140%;
+
+      margin-bottom: 40px;
+    }
+
+    // banner__heading_news
+
+    &_news {
+      font-size: 26px;
+      line-height: 119%;
+      text-transform: uppercase;
 
       margin-bottom: 40px;
     }
@@ -80,24 +140,36 @@
   &__info {
     display: flex;
     flex-direction: column;
-    margin: 50px auto;
+
 
     // banner__info_bonus
     &_bonus {
       max-width: 435px;
+
+      margin: 50px auto;
     }
 
     // banner__info_promo
     &_promo {
       max-width: 553px;
+
+      margin: 50px auto;
+    }
+
+    //banner__info_news
+
+    &_news {
+      max-width: 583px;
+
+      margin: 0 auto;
     }
   }
 
   // .banner__text
 
   &__text {
-
     line-height: 150%;
+
 
     // .banner__text_bonus
 
@@ -115,5 +187,31 @@
 
       margin-bottom: 55px;
     }
+
+    // banner__text_news
+
+    &_news {
+      font-size: 18px;
+
+      margin-bottom: 50px;
+
+      &>p {
+        font-size: inherit;
+      }
+
+      &>p:not(:last-child) {
+        margin-bottom: 20px;
+      }
+
+    }
+  }
+
+  // banner__data
+  &__data {
+    font-size: 18px;
+    line-height: 117%;
+    color: #CECBCB;
+
+    margin-bottom: 30px;
   }
 }

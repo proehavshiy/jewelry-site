@@ -1,14 +1,19 @@
 // * custom scripts
 import * as browserWebp from "./modules/functions.js"
-import * as navbar from "../htmlParts/components/Navbar/navbar.js"
-// import 'bootstrap';
+import * as mobileMenu from "../htmlParts/components/Menu-popup/menu-popup.js"
 
 // подключение бургера
-navbar.burgerMenu()
-window.addEventListener('scroll', navbar.fixedNav)
+mobileMenu.burgerMenu('burger', 'menu-popup')
 
 // webp
 browserWebp.isWebp()
+
+
+// mobile menu
+
+// menu-popup_opened
+
+
 
 
 // import Swiper JS

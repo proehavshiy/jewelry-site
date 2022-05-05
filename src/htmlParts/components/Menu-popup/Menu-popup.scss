@@ -1,0 +1,55 @@
+.menu-popup {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  background-color: rgba(0, 0, 0, 0.2);
+
+  z-index: 555;
+
+  visibility: hidden;
+  opacity: 0;
+  transition: $linkTransition;
+
+  // .menu-popup_opened
+
+  &_opened {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  // .menu-popup__container
+
+  &__container {
+    max-width: 420px;
+
+    padding: 60px 56px;
+
+    background: #FFFFFF;
+
+    position: relative;
+  }
+
+  // .menu-popup__close-btn
+
+  &__close-btn {
+    width: 13px;
+    height: 13px;
+    background: none;
+
+    position: absolute;
+    top: 25px;
+    right: 25px;
+
+    background-image: url('../img/close-burger.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

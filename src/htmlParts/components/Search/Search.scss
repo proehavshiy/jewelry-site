@@ -1,0 +1,72 @@
+.search {
+  display: flex;
+
+  // .search__type
+
+  &__type {
+
+    // .search__type_header
+
+    &_header {
+      width: 287px;
+
+      // размеры шрифта для хедер-версии
+      &>.search__input {
+        font-size: 18px;
+        line-height: 1.1818;
+      }
+
+      @media (max-width: $breakpoint1024) {
+        display: none;
+      }
+    }
+
+    // .search__type_popup
+
+    &_popup {
+      width: 213px;
+
+      margin-bottom: 28px;
+
+      // размеры шрифта для попап-версии
+      &>.search__input {
+        font-size: 16px;
+        line-height: 150%;
+      }
+
+    }
+  }
+
+  // .search__input
+
+  &__input {
+    width: 100%;
+    height: 100%;
+
+    box-sizing: border-box;
+    color: $colorDark;
+    border-bottom: 1px solid $colorGrey;
+
+    &::placeholder {
+      color: $colorGrey;
+    }
+
+    &:focus {
+      border-bottom: 1px solid $colorDark;
+      caret-color: $colorDark;
+
+      &::placeholder {
+        color: $colorDark
+      }
+    }
+  }
+
+  // .search__submit
+
+  &__submit {
+    width: 24px;
+    height: 24px;
+
+    background: transparent;
+  }
+}

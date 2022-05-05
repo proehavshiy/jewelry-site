@@ -6,325 +6,415 @@
 })
 
 <body>
-  <!-- Header -->
+  <!-- !Header -->
   @@include('./htmlParts/_header.html',{})
-  <section class="promo">
-    <div class="container">
-      <!-- Slider main container -->
-      <div class="swiper container">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide">
-            @@include('./htmlParts/components/Banner/_Banner_promo.html',{})
-          </div>
-          <div class="swiper-slide">
-            @@include('./htmlParts/components/Banner/_Banner_promo.html',{})
-          </div>
-          <div class="swiper-slide">
-            @@include('./htmlParts/components/Banner/_Banner_promo.html',{})
+  <!-- main content -->
+  <main class="main">
+    <!-- !промо -->
+    <section class="promo">
+      <div class="container">
+        <!-- Slider main container -->
+        <div class="swiper container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              @@include('./htmlParts/components/Banner/_Banner_promo.html',{})
+            </div>
+            <div class="swiper-slide">
+              @@include('./htmlParts/components/Banner/_Banner_promo.html',{})
+            </div>
+            <div class="swiper-slide">
+              @@include('./htmlParts/components/Banner/_Banner_promo.html',{})
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-    @@include('./htmlParts/components/DecorTabs/_DecorTabs.html',{})
-  </section>
-  <!-- каталог -->
-  @@include('./htmlParts/components/Catalog/_Catalog.html')
-  <!-- новинки -->
-  <section class="new-positions">
-    <div class="container">
-      <div class="new-positions__heading-wrapper">
-        @@include('./htmlParts/components/Heading/_heading_section.html',{
-        "title":"Новинки"
-        })
-      </div>
-      <ul class="new-positions__wrapper">
-        <li class="new-positions__item">
-          <div class="card-new card-new_regular">
-            <div class="card-new__heading">
-              <p>Название</p>
-              <p>коллекции</p>
-            </div>
-          </div>
-        </li>
-        <li class="new-positions__item">
-          <div class="card-new card-new_big">
-            <div class="card-new__heading">
-              <p>Название</p>
-              <p>коллекции</p>
-            </div>
-          </div>
-        </li>
-        <li class="new-positions__item">
-          <div class="card-new card-new_regular">
-            <div class="card-new__heading">
-              <p>Название</p>
-              <p>коллекции</p>
-            </div>
-          </div>
-        </li>
-      </ul>
-      <div class="new-positions__button-wrapper">
-        @@include('./htmlParts/components/button/button.html',{
-        "title": "Все новинки",
-        })
-      </div>
-    </div>
-  </section>
-
-  <!-- распродажа -->
-  <section class="sale">
-    <div class="container">
-      <div class="sale__heading-wrapper">
-        @@include('./htmlParts/components/Heading/_heading_section.html',{
-        "title":"Распродажа"
-        })
-      </div>
-      <ul class="sale__wrapper">
-        <li class="sale__card">
-          <div class="card-sale">
-            <div class="card-sale__info">
-              <img src="../img/sale1.jpg" alt="sale card image" class="card-sale__img">
-              <div class="card-sale__heading">
-                Золотое кольцо
-                с бриллиантом
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      @@include('./htmlParts/components/DecorTabs/_DecorTabs.html',{})
+    </section>
+    <!-- !каталог -->
+    @@include('./htmlParts/components/Catalog/_Catalog.html')
+    <!-- !новинки -->
+    <section class="new-positions">
+      <div class="container">
+        <div class="new-positions__heading-wrapper">
+          @@include('./htmlParts/components/Heading/_heading_section.html',{
+          "title":"Новинки"
+          })
+        </div>
+        <ul class="new-positions__wrapper">
+          <li class="new-positions__item">
+            <div class="card-new card-new_regular">
+              <div class="card-new__heading">
+                <p>Название</p>
+                <p>коллекции</p>
               </div>
             </div>
-            <div class="card-sale__price">
-              <div class="card-sale__old-price">99999.99</div>
-              <div class="card-sale__new-price">20 000 ₽</div>
+          </li>
+          <li class="new-positions__item">
+            <div class="card-new card-new_big">
+              <div class="card-new__heading">
+                <p>Название</p>
+                <p>коллекции</p>
+              </div>
             </div>
-            <a href="#" class="button card-sale__button" target="_blank" rel="noreferrer noopener">Купить</a>
-            <!-- @@include('./htmlParts/components/button/button.html',{
+          </li>
+          <li class="new-positions__item">
+            <div class="card-new card-new_regular">
+              <div class="card-new__heading">
+                <p>Название</p>
+                <p>коллекции</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="new-positions__button-wrapper">
+          @@include('./htmlParts/components/button/button.html',{
+          "title": "Все новинки",
+          })
+        </div>
+      </div>
+    </section>
+
+    <!-- !распродажа -->
+
+    <section class="sale">
+      <div class="container">
+        <div class="sale__heading-wrapper">
+          @@include('./htmlParts/components/Heading/_heading_section.html',{
+          "title":"Распродажа"
+          })
+        </div>
+        <ul class="sale__wrapper">
+          <li class="sale__card">
+            <div class="card-sale">
+              <div class="card-sale__info">
+                <img src="../img/sale1.jpg" alt="sale card image" class="card-sale__img">
+                <div class="card-sale__heading">
+                  Золотое кольцо
+                  с бриллиантом
+                </div>
+              </div>
+              <div class="card-sale__price">
+                <div class="card-sale__old-price">99999.99</div>
+                <div class="card-sale__new-price">20 000 ₽</div>
+              </div>
+              <a href="#" class="button card-sale__button" target="_blank" rel="noreferrer noopener">Купить</a>
+              <!-- @@include('./htmlParts/components/button/button.html',{
                     "title": "Купить",
                     }) -->
-            <span class="card-sale__percent">— 20%</span>
-          </div>
-        </li>
-        <li class="sale__card">
-          <div class="card-sale">
-            <div class="card-sale__info">
-              <img src="../img/sale2.jpg" alt="sale card image" class="card-sale__img">
-              <div class="card-sale__heading">
-                Золотое кольцо
-                с бриллиантом
+              <span class="card-sale__percent">— 20%</span>
+            </div>
+          </li>
+          <li class="sale__card">
+            <div class="card-sale">
+              <div class="card-sale__info">
+                <img src="../img/sale2.jpg" alt="sale card image" class="card-sale__img">
+                <div class="card-sale__heading">
+                  Золотое кольцо
+                  с бриллиантом
+                </div>
               </div>
-            </div>
-            <div class="card-sale__price">
-              <div class="card-sale__old-price">99999.99</div>
-              <div class="card-sale__new-price">20 000 ₽</div>
-            </div>
-            <a href="#" class="button card-sale__button" target="_blank" rel="noreferrer noopener">Купить</a>
-            <!-- @@include('./htmlParts/components/button/button.html',{
+              <div class="card-sale__price">
+                <div class="card-sale__old-price">99999.99</div>
+                <div class="card-sale__new-price">20 000 ₽</div>
+              </div>
+              <a href="#" class="button card-sale__button" target="_blank" rel="noreferrer noopener">Купить</a>
+              <!-- @@include('./htmlParts/components/button/button.html',{
             "title": "Купить",
             }) -->
-            <span class="card-sale__percent">— 20%</span>
-          </div>
-        </li>
-        <li class="sale__card">
-          <div class="card-sale">
-            <div class="card-sale__info">
-              <img src="../img/sale2.jpg" alt="sale card image" class="card-sale__img">
-              <div class="card-sale__heading">
-                Золотое кольцо
-                с бриллиантом
+              <span class="card-sale__percent">— 20%</span>
+            </div>
+          </li>
+          <li class="sale__card">
+            <div class="card-sale">
+              <div class="card-sale__info">
+                <img src="../img/sale2.jpg" alt="sale card image" class="card-sale__img">
+                <div class="card-sale__heading">
+                  Золотое кольцо
+                  с бриллиантом
+                </div>
               </div>
-            </div>
-            <div class="card-sale__price">
-              <div class="card-sale__old-price">99999.99</div>
-              <div class="card-sale__new-price">20 000 ₽</div>
-            </div>
-            <a href="#" class="button card-sale__button" target="_blank" rel="noreferrer noopener">Купить</a>
-            <!-- @@include('./htmlParts/components/button/button.html',{
+              <div class="card-sale__price">
+                <div class="card-sale__old-price">99999.99</div>
+                <div class="card-sale__new-price">20 000 ₽</div>
+              </div>
+              <a href="#" class="button card-sale__button" target="_blank" rel="noreferrer noopener">Купить</a>
+              <!-- @@include('./htmlParts/components/button/button.html',{
             "title": "Купить",
             }) -->
-            <span class="card-sale__percent">— 20%</span>
-          </div>
-        </li>
-        <li class="sale__card">
-          <div class="card-sale">
-            <div class="card-sale__info">
-              <img src="../img/sale3.jpg" alt="sale card image" class="card-sale__img">
-              <div class="card-sale__heading">
-                Золотое кольцо
-                с бриллиантом
+              <span class="card-sale__percent">— 20%</span>
+            </div>
+          </li>
+          <li class="sale__card">
+            <div class="card-sale">
+              <div class="card-sale__info">
+                <img src="../img/sale3.jpg" alt="sale card image" class="card-sale__img">
+                <div class="card-sale__heading">
+                  Золотое кольцо
+                  с бриллиантом
+                </div>
               </div>
-            </div>
-            <div class="card-sale__price">
-              <div class="card-sale__old-price">99999.99</div>
-              <div class="card-sale__new-price">20 000 ₽</div>
-            </div>
-            <a href="#" class="button card-sale__button" target="_blank" rel="noreferrer noopener">Купить</a>
-            <!-- @@include('./htmlParts/components/button/button.html',{
+              <div class="card-sale__price">
+                <div class="card-sale__old-price">99999.99</div>
+                <div class="card-sale__new-price">20 000 ₽</div>
+              </div>
+              <a href="#" class="button card-sale__button" target="_blank" rel="noreferrer noopener">Купить</a>
+              <!-- @@include('./htmlParts/components/button/button.html',{
             "title": "Купить",
             }) -->
-            <span class="card-sale__percent">— 20%</span>
-          </div>
-        </li>
-        <li class="sale__card">
-          <div class="card-sale">
-            <div class="card-sale__info">
-              <img src="../img/sale4.jpg" alt="sale card image" class="card-sale__img">
-              <div class="card-sale__heading">
-                Золотое кольцо
-                с бриллиантом
+              <span class="card-sale__percent">— 20%</span>
+            </div>
+          </li>
+          <li class="sale__card">
+            <div class="card-sale">
+              <div class="card-sale__info">
+                <img src="../img/sale4.jpg" alt="sale card image" class="card-sale__img">
+                <div class="card-sale__heading">
+                  Золотое кольцо
+                  с бриллиантом
+                </div>
               </div>
-            </div>
-            <div class="card-sale__price">
-              <div class="card-sale__old-price">99999.99</div>
-              <div class="card-sale__new-price">20 000 ₽</div>
-            </div>
-            <a href="#" class="button card-sale__button" target="_blank" rel="noreferrer noopener">Купить</a>
-            <!-- @@include('./htmlParts/components/button/button.html',{
+              <div class="card-sale__price">
+                <div class="card-sale__old-price">99999.99</div>
+                <div class="card-sale__new-price">20 000 ₽</div>
+              </div>
+              <a href="#" class="button card-sale__button" target="_blank" rel="noreferrer noopener">Купить</a>
+              <!-- @@include('./htmlParts/components/button/button.html',{
             "title": "Купить",
             }) -->
-            <span class="card-sale__percent">— 20%</span>
-          </div>
-        </li>
-        <li class="sale__card">
-          <div class="card-sale">
-            <div class="card-sale__info">
-              <img src="../img/sale5.jpg" alt="sale card image" class="card-sale__img">
-              <div class="card-sale__heading">
-                Золотое кольцо
-                с бриллиантом
+              <span class="card-sale__percent">— 20%</span>
+            </div>
+          </li>
+          <li class="sale__card">
+            <div class="card-sale">
+              <div class="card-sale__info">
+                <img src="../img/sale5.jpg" alt="sale card image" class="card-sale__img">
+                <div class="card-sale__heading">
+                  Золотое кольцо
+                  с бриллиантом
+                </div>
               </div>
-            </div>
-            <div class="card-sale__price">
-              <div class="card-sale__old-price">99999.99</div>
-              <div class="card-sale__new-price">20 000 ₽</div>
-            </div>
-            <a href="#" class="button card-sale__button" target="_blank" rel="noreferrer noopener">Купить</a>
-            <!-- @@include('./htmlParts/components/button/button.html',{
+              <div class="card-sale__price">
+                <div class="card-sale__old-price">99999.99</div>
+                <div class="card-sale__new-price">20 000 ₽</div>
+              </div>
+              <a href="#" class="button card-sale__button" target="_blank" rel="noreferrer noopener">Купить</a>
+              <!-- @@include('./htmlParts/components/button/button.html',{
             "title": "Купить",
             }) -->
-            <span class="card-sale__percent">— 20%</span>
-          </div>
-        </li>
-        <li class="sale__card">
-          <div class="card-sale">
-            <div class="card-sale__info">
-              <img src="../img/sale6.jpg" alt="sale card image" class="card-sale__img">
-              <div class="card-sale__heading">
-                Золотое кольцо
-                с бриллиантом
+              <span class="card-sale__percent">— 20%</span>
+            </div>
+          </li>
+          <li class="sale__card">
+            <div class="card-sale">
+              <div class="card-sale__info">
+                <img src="../img/sale6.jpg" alt="sale card image" class="card-sale__img">
+                <div class="card-sale__heading">
+                  Золотое кольцо
+                  с бриллиантом
+                </div>
               </div>
-            </div>
-            <div class="card-sale__price">
-              <div class="card-sale__old-price">99999.99</div>
-              <div class="card-sale__new-price">20 000 ₽</div>
-            </div>
-            <a href="#" class="button card-sale__button" target="_blank" rel="noreferrer noopener">Купить</a>
-            <!-- @@include('./htmlParts/components/button/button.html',{
+              <div class="card-sale__price">
+                <div class="card-sale__old-price">99999.99</div>
+                <div class="card-sale__new-price">20 000 ₽</div>
+              </div>
+              <a href="#" class="button card-sale__button" target="_blank" rel="noreferrer noopener">Купить</a>
+              <!-- @@include('./htmlParts/components/button/button.html',{
             "title": "Купить",
             }) -->
-            <span class="card-sale__percent">— 20%</span>
-          </div>
-        </li>
-      </ul>
-      <div class="sale__button-wrapper">
-        @@include('./htmlParts/components/button/button.html',{
-        "title": "Посмотреть все",
-        })
+              <span class="card-sale__percent">— 20%</span>
+            </div>
+          </li>
+        </ul>
+        <div class="sale__button-wrapper">
+          @@include('./htmlParts/components/button/button.html',{
+          "title": "Посмотреть все",
+          })
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- бонусная программа -->
+    <!-- !бонусная программа -->
 
-  <section class="bonus">
-    <div class="container">
-      <div class="bonus__heading-wrapper">
-        @@include('./htmlParts/components/Heading/_heading_section.html',{
-        "title":"Бонусная программа"
-        })
+    <section class="bonus">
+      <div class="container">
+        <div class="bonus__heading-wrapper">
+          @@include('./htmlParts/components/Heading/_heading_section.html',{
+          "title":"Бонусная программа"
+          })
+        </div>
+        <ul class="bonus__wrapper">
+          <li class="bonus__card bonus__card_sertificate">
+            <div class="bonus__image bonus__image_sertificate">
+              <img src="./img/bonus1.png" alt="bonus image">
+            </div>
+            <div class="bonus__caption bonus__caption_sertificate">
+              <p>Подарочный</p>
+              <p>сертификат</p>
+              <p class="bonus__figcaption">осуществите самые заветные желания дорогого человека</p>
+            </div>
+          </li>
+          <li class="bonus__card bonus__card_discont">
+            <div class="bonus__image">
+              <img src="./img/bonus2.png" alt="bonus image">
+            </div>
+            <div class="bonus__caption">
+              <p>Дисконтные</p>
+              <p>Карты</p>
+              <p class="bonus__figcaption">для наших любимых покупателей</p>
+            </div>
+          </li>
+          <li class="bonus__card bonus__card_offer">
+            <div class="bonus__image">
+              <img src="./img/bonus3.png" alt="bonus image">
+            </div>
+            <div class="bonus__caption">
+              <p>Обручальные</p>
+              <p>кольца</p>
+              <p class="bonus__figcaption">
+                <span>3480</span>
+                руб/гр
+              </p>
+            </div>
+          </li>
+        </ul>
       </div>
-      <ul class="bonus__wrapper">
-        <li class="bonus__card bonus__card_sertificate">
-          <div class="bonus__image bonus__image_sertificate">
-            <img src="./img/bonus1.png" alt="bonus image">
-          </div>
-          <div class="bonus__caption bonus__caption_sertificate">
-            <p>Подарочный</p>
-            <p>сертификат</p>
-            <p class="bonus__figcaption">осуществите самые заветные желания дорогого человека</p>
-          </div>
-        </li>
-        <li class="bonus__card bonus__card_discont">
-          <div class="bonus__image">
-            <img src="./img/bonus2.png" alt="bonus image">
-          </div>
-          <div class="bonus__caption">
-            <p>Дисконтные</p>
-            <p>Карты</p>
-            <p class="bonus__figcaption">для наших любимых покупателей</p>
-          </div>
-        </li>
-        <li class="bonus__card bonus__card_offer">
-          <div class="bonus__image">
-            <img src="./img/bonus3.png" alt="bonus image">
-          </div>
-          <div class="bonus__caption">
-            <p>Обручальные</p>
-            <p>кольца</p>
-            <p class="bonus__figcaption">
-              <span>3480</span>
-              руб/гр
-            </p>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </section>
+    </section>
 
-  <!-- main content -->
-  <main>
+    <!-- !about -->
 
-    <!-- @@include('./htmlParts/_swiper.html') -->
+    <section class="about">
+      <div class="container">
+        @@include('./htmlParts/components/Banner/_Banner_bonus.html',{})
+      </div>
+    </section>
 
-    <!-- @@include('./htmlParts/components/Heading/_heading.html',{
-    "title":"Главная"
-    }) -->
+    <!--!новости -->
 
-    <!-- @@include('./htmlParts/components/button/button.html',{
-    "title":"Посмотреть все"
-    })
+    <section class="news">
+      <div class="container">
+        <div class="news__heading-wrapper">
+          @@include('./htmlParts/components/Heading/_heading_section.html',{
+          "title":"Новости"
+          })
+        </div>
+        <div class="news__wrapper">
+          @@include('./htmlParts/components/Banner/_Banner_news.html',{})
+        </div>
+      </div>
+    </section>
 
-    @@include('./htmlParts/components/Banner/_Banner_promo.html',{})
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    @@include('./htmlParts/components/Banner/_Banner_bonus.html',{})
+    <!-- ! decor tabs -->
+    @@include('./htmlParts/components/DecorTabs/_DecorTabs.html',{})
 
-    @@include('./htmlParts/components/DecorTabs/_DecorTabs.html',{}) -->
-
-    <!-- <img width="150px" src="@img/Pug.webp" alt="pug1"> -->
-    <!-- <h1>Home page</h1> -->
-    <!-- <ul class="grid-box">
-      <li class="grid-box__item">
-        @@include('./htmlParts/components/Card-with-image/card-with-image.html', {})
-      </li>
-      <li class="grid-box__item">
-        @@include('./htmlParts/components/Card-with-image/card-with-image.html', {})
-      </li>
-      <li class="grid-box__item">
-        @@include('./htmlParts/components/Card-with-image/card-with-image.html', {})
-      </li>
-      <li class="grid-box__item">
-        @@include('./htmlParts/components/Card-with-image/card-with-image.html', {})
-      </li>
-    </ul> -->
   </main>
+  <footer class="footer">
+    <div class="container">
+      <a href="#" class="footer__logo" target="_blank">
+        <img src="@img/footer-logo.svg" alt="logo">
+      </a>
+      <div class="footer__content">
+        <!-- !навигация ссылки -->
+        <ul class="footer__nav">
+          <li class="footer__nav-item"><a href="#" class="footer__item-link footer__item" target="_blank">О компании</a>
+          </li>
+          <li class="footer__nav-item"><a href="#" class="footer__item-link footer__item" target="_blank">Доставка
+              и оплата</a></li>
+          <li class="footer__nav-item"><a href="#" class="footer__item-link footer__item" target="_blank">Скупка
+              и обмен</a></li>
+          <li class="footer__nav-item"><a href="#" class="footer__item-link footer__item" target="_blank">Каталог</a>
+          </li>
+          <li class="footer__nav-item"><a href="#" class="footer__item-link footer__item" target="_blank">Личный
+              кабинет</a></li>
+          <li class="footer__nav-item"><a href="#" class="footer__item-link footer__item" target="_blank">Сервис
+              и поддержка</a></li>
+          <li class="footer__nav-item"><a href="#" class="footer__item-link footer__item" target="_blank">Акции</a></li>
+          <li class="footer__nav-item"><a href="#" class="footer__item-link footer__item" target="_blank">Распродажа</a>
+          </li>
+          <li class="footer__nav-item"><a href="#" class="footer__item-link footer__item" target="_blank">Новинки</a>
+          </li>
+          <li class="footer__nav-item"><a href="#" class="footer__item-link footer__item" target="_blank">Новости</a>
+          </li>
+        </ul>
+        <!-- !контакты -->
+        <ul class="footer__contacts">
+          <li class="footer__contacts-item">
+            <a href="#" class="footer__contacts-link footer__item" target="_blank">
+              <svg width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M27.1777 20.7587L27.1777 20.7586C27.1289 20.6182 27.0444 20.4915 26.9313 20.3908C26.8184 20.2904 26.6809 20.2193 26.5313 20.1849C26.531 20.1849 26.5308 20.1848 26.5305 20.1847L18.1328 18.2943L27.1777 20.7587ZM27.1777 20.7587L27.1797 20.7642M27.1777 20.7587L27.1797 20.7642M27.1797 20.7642C27.2876 21.0635 27.369 21.3715 27.4229 21.6846M27.1797 20.7642L16.9539 18.1652C16.7579 18.3446 16.7439 18.3584 15.8339 20.07C12.8143 18.6982 10.3948 16.303 9.01576 13.3203C9.11577 13.2706 9.21021 13.2237 9.2994 13.1794C10.7959 12.4363 10.818 12.4253 10.9898 12.2299C11.1532 12.065 11.2721 11.8624 11.3357 11.6406C11.3993 11.4188 11.4055 11.1848 11.3538 10.96L9.43576 2.77483C9.38207 2.54666 9.27036 2.33572 9.11116 2.16186C8.95196 1.98799 8.7505 1.85694 8.52575 1.78102C8.1988 1.66588 7.86118 1.58267 7.51774 1.53256C7.16389 1.45167 6.80279 1.40543 6.43972 1.39453C4.7317 1.39453 3.09364 2.06348 1.88589 3.25422C0.678141 4.44496 -0.000366211 6.05995 -0.000366211 7.74392C0.00704258 13.3793 2.28095 18.7817 6.32268 22.7666C10.3644 26.7514 15.8441 28.9932 21.5599 29.0006C22.4057 29.0006 23.2431 28.8363 24.0244 28.5172C24.8058 28.1981 25.5157 27.7305 26.1138 27.1409C26.7118 26.5513 27.1862 25.8513 27.5098 25.081C27.8334 24.3106 28 23.485 28 22.6512C28.0005 22.2998 27.9724 21.949 27.916 21.6021L27.4232 21.6867C27.4231 21.686 27.423 21.6853 27.4229 21.6846M27.4229 21.6846C27.4746 22.0041 27.5004 22.3271 27.5 22.6505V22.6512C27.5 23.4183 27.3468 24.1781 27.0488 24.8873C26.7509 25.5965 26.314 26.2413 25.7627 26.7848C25.2115 27.3283 24.5566 27.7598 23.8354 28.0543C23.1144 28.3488 22.3414 28.5005 21.5606 28.5006C15.9748 28.4934 10.6213 26.3025 6.67372 22.4105C2.72644 18.5188 0.506952 13.2441 0.499634 7.74358C0.499724 6.19466 1.12379 4.70773 2.23693 3.61028C3.34861 2.51425 4.85723 1.8965 6.43219 1.89454C6.7603 1.90487 7.08657 1.94689 7.40631 2.01999L7.42579 2.02444L7.44556 2.02732C7.75707 2.07277 8.06324 2.14824 8.35968 2.25263L8.35967 2.25267L8.36574 2.25472C8.51107 2.30381 8.64056 2.3883 8.7424 2.49952C8.84415 2.61064 8.915 2.7448 8.94901 2.88915C8.94902 2.88922 8.94904 2.8893 8.94906 2.88937L10.8665 11.0721C10.8666 11.0724 10.8667 11.0727 10.8667 11.073C10.8992 11.215 10.8952 11.3627 10.855 11.5028C10.8148 11.6433 10.7392 11.7724 10.6347 11.8779L10.6241 11.8885L10.6143 11.8998C10.5712 11.9488 10.5618 11.9576 10.5459 11.9701C10.5236 11.9876 10.4775 12.0191 10.3608 12.0831C10.1499 12.1988 9.78262 12.3812 9.07096 12.7346C8.9837 12.778 8.89125 12.8239 8.79328 12.8726L8.35789 13.0889L8.56192 13.5302C9.99172 16.6227 12.4995 19.1044 15.627 20.5252L16.0548 20.7196L16.2753 20.3047C16.7334 19.4432 16.9576 19.0249 17.092 18.7975C17.1582 18.6856 17.1924 18.6377 17.2129 18.6123C17.2299 18.5912 17.2423 18.579 17.2915 18.534L17.2916 18.5341L17.3008 18.5253C17.4079 18.4221 17.5402 18.3464 17.6858 18.3058C17.8311 18.2653 17.9846 18.2613 18.1321 18.2941L27.4229 21.6846Z"
+                  stroke="#EFE3C7" />
+                <path
+                  d="M27.2002 12.8312C27.2002 9.69333 25.9359 6.68404 23.6854 4.46526C21.4349 2.24649 18.3827 1 15.2 1"
+                  stroke="#EFE3C7" stroke-linecap="round" />
+                <path
+                  d="M21.1995 14.0147C21.1995 12.132 20.441 10.3264 19.0907 8.99517C17.7404 7.66391 15.909 6.91602 13.9995 6.91602"
+                  stroke="#EFE3C7" stroke-linecap="round" />
+              </svg>
+              +7 (999) 999-99-99
+            </a>
+          </li>
+          <li class="footer__contacts-item">
+            <a href="#" class="footer__contacts-link footer__item" target="_blank">
+              <svg width="30" height="21" viewBox="0 0 30 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M29 1V20H1V1M29 1H1M29 1L15 10.5L1 1" stroke="#EFE3C7" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+              example@zhemchuzhina.ru
+            </a>
+          </li>
+          <li class="footer__contacts-item">
+            <!-- !соцсети -->
+            <ul class="footer__social-bar">
+              <li class="footer__social">
+                <a href="#" class="footer__social-link footer__item" target="_blank">
+                  <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="0.5" width="27" height="27" rx="7.5" stroke="#EFE3C7" />
+                    <circle cx="14" cy="14" r="8" stroke="#EFE3C7" />
+                    <circle cx="14" cy="14" r="4" stroke="#EFE3C7" />
+                    <circle cx="22.4429" cy="5.58203" r="1.5" stroke="#EFE3C7" />
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social">
+                <a href="#" class="footer__social-link footer__item" target="_blank">
+                  <svg width="39" height="23" viewBox="0 0 39 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M37.6273 1.41246L37.6216 1.43135L37.6174 1.45063C37.4992 1.99044 37.1066 2.85137 36.5421 3.8822C35.9867 4.89669 35.2931 6.02604 34.6124 7.08443C33.9323 8.14177 33.2686 9.12296 32.7745 9.83996C32.5887 10.1095 32.4271 10.3416 32.2977 10.526L32.2725 10.501L31.9404 11.032L31.9353 11.0401C31.7272 11.3729 31.4945 11.7449 31.4602 12.1654C31.4224 12.6289 31.6224 13.044 31.9647 13.4838C32.2162 13.829 32.712 14.3112 33.2224 14.8076L33.2815 14.865C33.8383 15.4068 34.4424 15.9963 34.9229 16.5591L34.9228 16.5592L34.9308 16.5681C35.8442 17.5877 36.6361 18.5184 37.2451 19.3369C37.8583 20.1612 38.2573 20.8343 38.4239 21.3461C38.5707 21.8512 38.4792 22.0972 38.3739 22.2186C38.2515 22.3596 37.9719 22.4981 37.4246 22.4981H33.1584C32.8258 22.4981 32.5713 22.4339 32.3296 22.3082C32.0772 22.177 31.8168 21.9673 31.4882 21.6403C31.2213 21.3745 30.9294 21.0523 30.5718 20.6574C30.4866 20.5634 30.3977 20.4652 30.3045 20.3627C29.8249 19.8352 29.2463 19.2092 28.5147 18.4827L28.5147 18.4826L28.5079 18.4761C25.9669 16.0462 24.7551 15.5992 23.9137 15.5992C23.4756 15.5992 22.9748 15.6504 22.6449 16.0572C22.4893 16.2491 22.4064 16.4797 22.3597 16.7192C22.313 16.958 22.2965 17.2368 22.2965 17.5524V21.3516C22.2965 21.829 22.2184 22.0141 22.013 22.1511C21.7277 22.3412 21.1063 22.5 19.7506 22.5C15.4249 22.5 10.6 19.8856 7.1453 14.9618L7.14533 14.9618L7.14202 14.9572C4.51916 11.3076 2.85379 8.10932 1.84574 5.69255C1.3416 4.48388 1.00277 3.47285 0.790765 2.70058C0.574802 1.91388 0.5 1.40893 0.5 1.19812C0.5 0.937232 0.552822 0.796409 0.633726 0.712691C0.713705 0.629928 0.919788 0.501933 1.46359 0.501933H5.72978C6.19921 0.501933 6.43551 0.601809 6.60219 0.75425C6.79377 0.929459 6.96535 1.23727 7.16472 1.8122C8.22123 4.86628 9.63979 7.72929 10.983 9.83632C11.6537 10.8884 12.3144 11.766 12.9114 12.3871C13.2094 12.6972 13.5029 12.9553 13.7842 13.1391C14.0565 13.3171 14.3679 13.459 14.6904 13.459C14.8582 13.459 15.0564 13.441 15.2485 13.355C15.4546 13.2626 15.6145 13.1098 15.7275 12.907C15.9276 12.548 15.9825 12.0219 15.9825 11.3435V5.10553V5.09183L15.9817 5.07816C15.8971 3.53356 15.4342 2.6633 14.9777 2.04658C14.8748 1.9077 14.7736 1.78324 14.6858 1.67539L14.67 1.65593C14.5754 1.53967 14.5013 1.4474 14.4403 1.35986C14.3238 1.19262 14.2873 1.0866 14.2873 0.973954C14.2873 0.781742 14.4651 0.5 14.8733 0.5H21.5801C21.9462 0.5 22.0677 0.593329 22.1291 0.674927C22.2182 0.793454 22.2985 1.04199 22.2985 1.55755V9.95018C22.2985 10.9417 22.7625 11.6618 23.4622 11.6618C24.2417 11.6618 24.837 11.1756 25.8026 10.2112L25.8118 10.202L25.8204 10.1924C27.398 8.44463 28.7318 6.23805 29.6663 4.48435C30.1351 3.60452 30.5067 2.83241 30.7614 2.27964C30.8888 2.00316 30.9871 1.78129 31.0537 1.62794C31.0871 1.55125 31.1125 1.49168 31.1298 1.45096L31.1494 1.40422L31.1546 1.39194C31.2694 1.12923 31.4159 0.914225 31.6171 0.76306C31.813 0.615893 32.0994 0.5 32.5492 0.5H36.8174C37.3995 0.5 37.5825 0.650771 37.6381 0.729693C37.6996 0.81698 37.7479 1.01467 37.6273 1.41246ZM31.964 10.9976C31.963 10.9989 31.9633 10.9986 31.9642 10.9974L31.964 10.9976ZM32.3643 11.2971L32.0119 11.6518C32.0519 11.6682 32.0921 11.6806 32.1319 11.6898C31.8742 12.1762 31.8577 12.5346 32.3643 13.1832V11.2971Z"
+                      stroke="#EFE3C7" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <!-- !адреса -->
+        <ul class="footer__adresses">
+          <li class="footer__adress footer__item">Наши адреса</li>
+          <li class="footer__adress footer__item">​Суперцентр Европа 20 ​проспект Дружбы, 9а</li>
+          <li class="footer__adress footer__item">​Пушкинский​ Ленина, 30</li>
+          <li class="footer__adress footer__item">Менделеева, 47а</li>
+          <li class="footer__adress footer__item">​Гипермаркет Линия 1, ​Энгельса, 70</li>
+        </ul>
+      </div>
+      <div class="footer__politics">
+        <a href="#" class="footer__policy footer__item" target="_blank">
+          Политика конфиденциальности
+        </a>
+        <a href="#" class="footer__author footer__item" target="_blank">
+          Разработано в kvokka
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ! мобильное меню -->
+  @@include('./htmlParts/components/Menu-popup/Menu-popup.html')
+
   <!-- @@include('htmlParts/_header-burger.html') -->
 
   <!-- Footer -->

@@ -1,0 +1,174 @@
+.nav-bar {
+  display: flex;
+
+  // .nav-bar__type
+
+  &__type {
+
+    // ! .nav-bar__type_header
+
+    &_header {
+      justify-content: space-between;
+      align-items: center;
+
+      // отступы между li
+      & .nav-bar__container {
+        &>.nav-bar__item:not(:last-child) {
+          margin-right: 60px;
+
+          @media (max-width: $breakpoint1920) {
+            margin-right: 30px;
+          }
+        }
+
+        // стили для li
+        &>.nav-bar__item {
+          display: flex;
+          align-items: center;
+          min-height: 70px;
+
+          font-size: 18px;
+          line-height: 1.1666;
+
+          @media (max-width: $breakpoint1920) {
+            font-size: 16px;
+            line-height: 1.5;
+          }
+        }
+      }
+
+      //  стили для телефона
+      & .nav-bar__phone {
+        min-height: 70px;
+
+        font-size: 18px;
+        line-height: 1.1666;
+
+        margin: 0 56px 0 auto;
+
+        @media (max-width: $breakpoint1920) {
+          font-size: 16px;
+          line-height: 1.5;
+
+          margin: 0 35px 0 auto;
+        }
+      }
+    }
+
+    // ! .nav-bar__type_popup
+
+    &_popup {
+      flex-direction: column;
+      align-items: flex-start;
+
+      // вертикальные отступы между блоками
+      & .nav-bar__container {
+        margin-bottom: 30px;
+      }
+
+      & .nav-bar__phone {
+        margin-bottom: 20px;
+      }
+
+      // отступы между li
+      & .nav-bar__container {
+        flex-direction: column;
+
+        &>.nav-bar__item:not(:last-child) {
+          margin-bottom: 11px;
+        }
+
+        // стили для li
+        &>.nav-bar__item {
+          font-size: 14px;
+          line-height: 150%;
+        }
+      }
+
+      //  стили для телефона
+      & .nav-bar__phone {
+        font-size: 14px;
+        line-height: 150%;
+      }
+    }
+  }
+
+  // .nav-bar__container
+
+  &__container {
+    display: flex;
+  }
+
+  // .nav-bar__item
+
+  &__item {
+    color: $colorDark;
+
+    @include nav-hover;
+
+    &>a {
+      color: inherit;
+    }
+  }
+
+  // .nav-bar__phone
+
+  &__phone {
+    display: flex;
+    align-items: center;
+
+    color: $colorDark;
+
+    @include nav-hover;
+
+    &>svg {
+      width: 18px;
+      height: 18px;
+
+      margin-right: 17px;
+    }
+  }
+}
+
+
+// ! social bar
+
+.social-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // .social-bar__type
+
+  &__type {
+
+    // .social-bar__type_header
+
+    &_header {
+
+      &>*:not(:last-child) {
+        margin-right: 34px;
+      }
+
+      &>.social-bar__item {
+        display: flex;
+        align-items: center;
+        min-height: 70px;
+      }
+    }
+
+    // .social-bar__type_popup
+
+    &_popup {
+      &>*:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  // .social-bar__item
+
+  &__item {
+    @include nav-hover;
+  }
+}
