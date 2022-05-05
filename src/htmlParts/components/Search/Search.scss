@@ -14,9 +14,14 @@
       &>.search__input {
         font-size: 18px;
         line-height: 1.1818;
+
+        @media (max-width: $breakpoint1920) {
+          font-size: 16px;
+          line-height: 150%;
+        }
       }
 
-      @media (max-width: $breakpoint1024) {
+      @media (max-width: $breakpoint1280) {
         display: none;
       }
     }
