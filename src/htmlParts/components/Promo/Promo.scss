@@ -1,0 +1,63 @@
+.promo {
+  position: relative;
+
+  // .promo__swiper
+
+  &__swiper {}
+
+  // .promo__swiper-prev
+
+  &__swiper-prev {
+    left: 44.5px !important;
+
+    &:after {
+      font-size: 27px !important;
+      color: #3A3E46;
+    }
+
+    @media (max-width: $breakpoint1366) {
+      left: 33.5px !important;
+    }
+
+    @media (max-width: $breakpoint1280) {
+      left: 6.5px !important;
+    }
+
+    @media (max-width: $breakpoint768) {
+      left: 7.75px !important;
+      top: 35% !important;
+
+      &:after {
+        color: #FFFFFF;
+      }
+    }
+  }
+
+  // .promo__swiper-next
+
+  &__swiper-next {
+    right: 44.5px !important;
+
+    &:after {
+      font-size: 27px !important;
+      color: #3A3E46;
+    }
+
+    @media (max-width: $breakpoint1366) {
+      right: 33.5px !important;
+    }
+
+    @media (max-width: $breakpoint1280) {
+      right: 6.5px !important;
+    }
+
+    @media (max-width: $breakpoint768) {
+      right: 7.75px !important;
+      top: 35% !important;
+
+      &:after {
+        color: #FFFFFF;
+      }
+    }
+  }
+}

@@ -4,34 +4,73 @@
 
   position: relative;
 
+  @media (max-width: $breakpoint768) {
+    flex-direction: column !important;
+  }
+
   // banner_news
 
   &_news {
     flex-flow: row-reverse;
+
+    @media (max-width: $breakpoint768) {
+      flex-flow: column-reverse !important;
+    }
   }
 
   // .banner_promo
 
   &_promo {
     flex-flow: row-reverse;
-    margin-top: 94px; // 50 + 44 из-за картинки
-    margin-bottom: 94px; // 50 + 44 из-за картинки
+    padding: 94px 0; // 50 + 44 из-за картинки
   }
 
   // .banner_bonus
 
   &_bonus {
     border-right: 1px solid #CECBCB;
+
+    @media (max-width: $breakpoint768) {
+      border-right: none;
+    }
   }
 
   // .banner__demo
 
   &__demo {
-
+    width: 990px;
+    height: 576px;
 
     background-color: $colorMint;
 
     position: relative;
+
+    @media (max-width: $breakpoint1920) {
+      width: 668px;
+      height: 403px;
+    }
+
+    @media (max-width: $breakpoint1366) {
+      width: 616px;
+      height: 377px;
+    }
+
+    @media (max-width: $breakpoint1280) {
+      width: 476px;
+      height: 301px;
+    }
+
+    @media (max-width: $breakpoint1024) {
+      width: 349px;
+      height: 226px;
+
+      background-color: transparent;
+    }
+
+    @media (max-width: $breakpoint768) {
+      width: 100%;
+      height: 100%;
+    }
 
     // banner__demo_news
 
@@ -42,50 +81,93 @@
 
     // banner__demo_bonus
 
-    &_bonus {
-      width: 990px;
-      height: 576px;
-    }
+    &_bonus {}
 
     // banner__demo_promo
 
-    &_promo {
-      width: 990px;
-      height: 576px;
-    }
+    &_promo {}
   }
 
   // .banner__img
 
   &__img {
+
+    display: block;
+
+    width: 759px;
+    height: 115%;
+
+    object-fit: cover;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @media (max-width: $breakpoint1920) {
+      width: 528px;
+    }
+
+    @media (max-width: $breakpoint1366) {
+      width: 493px;
+    }
+
+    @media (max-width: $breakpoint1280) {
+      width: 394px;
+    }
+
+    @media (max-width: $breakpoint1024) {
+      width: 100%;
+    }
+
+    @media (max-width: $breakpoint768) {
+
+      position: static;
+      transform: none;
+
+      margin: 0 auto;
+    }
+
     // banner__img_news
 
     &_news {
       width: 699px;
-      height: 521px;
+      height: 100%;
+
+      position: static;
+      transform: none;
+
+      @media (max-width: $breakpoint1920) {
+        width: 568px;
+      }
+
+      @media (max-width: $breakpoint1366) {
+        width: 525px;
+      }
+
+      @media (max-width: $breakpoint1280) {
+        width: 446px;
+      }
+
+      @media (max-width: $breakpoint1024) {
+        width: 319px;
+      }
+
+      @media (max-width: $breakpoint768) {
+        width: 100%;
+      }
     }
 
     // banner__img_bonus
 
     &_bonus {
-      width: 698px;
-      height: 664px;
-
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      @media (max-width: $breakpoint1024) {
+        position: static;
+        transform: none;
+      }
     }
 
-    &_promo {
-      width: 759px;
-      height: 664px;
-
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
+    &_promo {}
   }
 
   // banner__heading
@@ -93,18 +175,9 @@
   &__heading {
     color: #3A3E46;
 
-    @media (max-width: $breakpoint1366) {
-      font-size: 36px;
-    }
-
-    @media (max-width: $breakpoint1024) {
-      font-size: 27px;
-    }
-
     @media (max-width: $breakpoint768) {
-      font-size: 24px;
+      text-align: center;
     }
-
 
     // banner__heading_promo
     &_promo {
@@ -113,6 +186,29 @@
 
       margin-bottom: 30px;
 
+      @media (max-width: $breakpoint1920) {
+        font-size: 50px;
+
+        margin-bottom: 25px;
+      }
+
+      @media (max-width: $breakpoint1280) {
+        font-size: 48px;
+
+        margin-bottom: 10px;
+      }
+
+      @media (max-width: $breakpoint1024) {
+        font-size: 36px;
+
+        margin-bottom: 8px;
+      }
+
+      @media (max-width: $breakpoint768) {
+        font-size: 24px;
+
+        margin-bottom: 15px;
+      }
     }
 
     // banner__heading_bonus
@@ -121,6 +217,24 @@
       line-height: 140%;
 
       margin-bottom: 40px;
+
+      @media (max-width: $breakpoint1920) {
+        font-size: 36px;
+
+        margin-bottom: 15px;
+      }
+
+      @media (max-width: $breakpoint1024) {
+        font-size: 27px;
+
+        margin-bottom: 11px;
+      }
+
+      @media (max-width: $breakpoint768) {
+        font-size: 24px;
+
+        margin-bottom: 6px;
+      }
     }
 
     // banner__heading_news
@@ -131,6 +245,32 @@
       text-transform: uppercase;
 
       margin-bottom: 40px;
+
+      @media (max-width: $breakpoint1920) {
+        font-size: 22px;
+
+        margin-bottom: 30px;
+      }
+
+      @media (max-width: $breakpoint1366) {
+        margin-bottom: 23px;
+      }
+
+      @media (max-width: $breakpoint1366) {
+        margin-bottom: 15px;
+      }
+
+      @media (max-width: $breakpoint1024) {
+        font-size: 18px;
+
+        margin-bottom: 13px;
+      }
+
+      @media (max-width: $breakpoint768) {
+        font-size: 24px;
+
+        margin-bottom: 10px;
+      }
     }
 
   }
@@ -146,14 +286,26 @@
     &_bonus {
       max-width: 435px;
 
-      margin: 50px auto;
+      margin: auto;
+
+      @media (max-width: $breakpoint1024) {
+        max-width: 300px;
+      }
+
+      @media (max-width: $breakpoint768) {
+        margin-top: 20px;
+      }
     }
 
     // banner__info_promo
     &_promo {
       max-width: 553px;
 
-      margin: 50px auto;
+      margin: auto;
+
+      @media (max-width: $breakpoint768) {
+        margin-top: 20px;
+      }
     }
 
     //banner__info_news
@@ -162,6 +314,14 @@
       max-width: 583px;
 
       margin: 0 auto;
+
+      @media (max-width: $breakpoint1024) {
+        max-width: 300px;
+      }
+
+      @media (max-width: $breakpoint768) {
+        align-items: center;
+      }
     }
   }
 
@@ -177,6 +337,40 @@
       font-size: 18px;
 
       margin-bottom: 50px;
+
+      @media (max-width: $breakpoint1920) {
+        font-size: 16px;
+
+        margin-bottom: 25px;
+      }
+
+      @media (max-width: $breakpoint1366) {
+        margin-bottom: 30px;
+      }
+
+      @media (max-width: $breakpoint1280) {
+        margin-bottom: 25px;
+      }
+
+      @media (max-width: $breakpoint1024) {
+        font-size: 12px;
+
+        margin-bottom: 20px;
+      }
+
+      @media (max-width: $breakpoint768) {
+        background-image: linear-gradient(180deg, #3A3E46 5%, rgba(255, 255, 255, 0) 70%);
+        background-size: 100%;
+        background-repeat: repeat;
+
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+
+        margin-bottom: 5px;
+      }
     }
 
     // .banner__text_promo
@@ -186,6 +380,26 @@
       text-transform: uppercase;
 
       margin-bottom: 55px;
+
+      @media (max-width: $breakpoint1920) {
+        margin-bottom: 34px;
+      }
+
+      @media (max-width: $breakpoint1366) {}
+
+      @media (max-width: $breakpoint1280) {
+        margin-bottom: 20px;
+      }
+
+      @media (max-width: $breakpoint1024) {
+        font-size: 18px;
+
+        margin-bottom: 15px;
+      }
+
+      @media (max-width: $breakpoint768) {
+        font-size: 14px;
+      }
     }
 
     // banner__text_news
@@ -203,6 +417,29 @@
         margin-bottom: 20px;
       }
 
+      @media (max-width: $breakpoint1920) {
+        font-size: 16px;
+
+        margin-bottom: 40px;
+      }
+
+      @media (max-width: $breakpoint1366) {
+        margin-bottom: 23px;
+      }
+
+      @media (max-width: $breakpoint1280) {
+        margin-bottom: 30px;
+      }
+
+      @media (max-width: $breakpoint1024) {
+        font-size: 12px;
+
+        margin-bottom: 20px;
+      }
+
+      @media (max-width: $breakpoint768) {
+        display: none;
+      }
     }
   }
 
@@ -213,5 +450,49 @@
     color: #CECBCB;
 
     margin-bottom: 30px;
+
+    @media (max-width: $breakpoint1920) {
+      font-size: 16px;
+
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: $breakpoint1024) {
+      font-size: 12px;
+
+      margin-bottom: 16px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      font-size: 14px;
+
+      margin-bottom: 10px;
+    }
+  }
+
+  // banner__button
+
+  &__button {
+    @media (max-width: $breakpoint768) {
+      width: 196px;
+      align-self: center;
+    }
+
+    // banner__button_promo
+    &_promo {
+      @media (max-width: $breakpoint1366) {
+        font-size: 18px;
+        line-height: 116%;
+      }
+    }
+
+    &_news {
+      @media (max-width: $breakpoint768) {
+        position: absolute;
+        bottom: -20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
   }
 }

@@ -20,6 +20,8 @@
 
   font-size: 22px;
   line-height: 118%;
+  text-align: center;
+
   color: $colorDark;
 
   border: 1px solid $colorDark;
@@ -59,6 +61,30 @@
   }
 }
 
+.section-margin {
+  margin-bottom: 140px;
+
+  @media (max-width: $breakpoint1920) {
+    margin-bottom: 100px;
+  }
+
+  @media (max-width: $breakpoint1366) {
+    margin-bottom: 90px;
+  }
+
+  @media (max-width: $breakpoint1280) {
+    margin-bottom: 85px;
+  }
+
+  @media (max-width: $breakpoint1024) {
+    margin-bottom: 50px;
+  }
+
+  @media (max-width: $breakpoint768) {
+    margin-bottom: 40px;
+  }
+}
+
 //*
 
 // * компоненты
@@ -77,6 +103,7 @@
 // @import '_swiper';
 @import'../htmlParts/components/Heading/_heading';
 @import'../htmlParts/components/button/button.scss';
+@import'../htmlParts/components/Promo/Promo';
 @import'../htmlParts/components/DecorTabs/_DecorTabs.scss';
 @import'../htmlParts/components/Banner/Banner';
 @import'../htmlParts/components/Catalog/Catalog';
@@ -97,32 +124,6 @@
 
 // promo
 
-.promo {
-  position: relative;
-  margin-bottom: 140px;
-}
-
-.swiper-button-prev {
-  position: absolute;
-  left: 44.5px;
-  top: 50%;
-
-  &:after {
-    font-size: 27px;
-    color: #3A3E46;
-  }
-}
-
-.swiper-button-next {
-  position: absolute;
-  right: 44.5px;
-  top: 50%;
-
-  &:after {
-    font-size: 27px;
-    color: #3A3E46;
-  }
-}
 
 
 // новинки

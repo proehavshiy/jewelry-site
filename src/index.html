@@ -11,30 +11,7 @@
   <!-- main content -->
   <main class="main">
     <!-- !промо -->
-    <section class="promo">
-      <div class="container">
-        <!-- Slider main container -->
-        <div class="swiper container">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-              @@include('./htmlParts/components/Banner/_Banner_promo.html',{})
-            </div>
-            <div class="swiper-slide">
-              @@include('./htmlParts/components/Banner/_Banner_promo.html',{})
-            </div>
-            <div class="swiper-slide">
-              @@include('./htmlParts/components/Banner/_Banner_promo.html',{})
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- If we need navigation buttons -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-      @@include('./htmlParts/components/DecorTabs/_DecorTabs.html',{})
-    </section>
+    @@include('./htmlParts/components/Promo/Promo.html')
     <!-- !каталог -->
     @@include('./htmlParts/components/Catalog/_Catalog.html')
     <!-- !новинки -->
