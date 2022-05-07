@@ -19,3 +19,6 @@ catalogSwiper()
 import newPositionsSwiper from '../htmlParts/components/New-positions/New-positions.js';
 newPositionsSwiper()
 
+import bonusSwiper from '../htmlParts/components/Bonus/Bonus.js';
+bonusSwiper()
+
