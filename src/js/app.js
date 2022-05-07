@@ -13,3 +13,6 @@ browserWebp.isWebp()
 import promoSwiper from '../htmlParts/components/Promo/Promo.js';
 promoSwiper()
 
+import catalogSwiper from '../htmlParts/components/Catalog/Catalog.js';
+catalogSwiper()
+

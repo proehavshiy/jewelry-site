@@ -1,68 +1,85 @@
-<section class="catalog">
+<section class="catalog section-margin">
   <div class="container">
-    <!-- @@include('./htmlParts/components/Heading/_heading.html',{
-    "title":"Главная"
-    } -->
     <div class="catalog__heading-wrapper">
       @@include('../Heading/_heading_section.html',{
       "title":"Каталог"
       })
     </div>
-    <ul class="catalog__container">
-      <li class="catalog__item">
-        <div class="catalog__description">
-          <p class="catalog__position">Украшения</p>
-          <p class="catalog__feature">С бриллиантами</p>
-        </div>
-        <div class="catalog__image-wrapper">
-          <img src="@img/catalog1.png" alt="catalog item image" class="catalog__image">
-        </div>
-      </li>
-      <li class="catalog__item">
-        <div class="catalog__description">
-          <p class="catalog__position">Новая коллекция</p>
-          <p class="catalog__feature">Серьги</p>
-        </div>
-        <div class="catalog__image-wrapper">
-          <img src="@img/catalog2.png" alt="catalog item image" class="catalog__image">
-        </div>
-      </li>
-      <li class="catalog__item">
-        <div class="catalog__description">
-          <p class="catalog__position">Браслеты</p>
-          <p class="catalog__feature">Из белого золота</p>
-        </div>
-        <div class="catalog__image-wrapper">
-          <img src="@img/catalog3.png" alt="catalog item image" class="catalog__image">
-        </div>
-      </li>
-      <li class="catalog__item">
-        <div class="catalog__description">
-          <p class="catalog__position">Восхитительные</p>
-          <p class="catalog__feature">Комплекты</p>
-        </div>
-        <div class="catalog__image-wrapper">
-          <img src="@img/catalog4.png" alt="catalog item image" class="catalog__image">
-        </div>
-      </li>
-      <li class="catalog__item">
-        <div class="catalog__description">
-          <p class="catalog__position">Уникальные</p>
-          <p class="catalog__feature">Броши</p>
-        </div>
-        <div class="catalog__image-wrapper">
-          <img src="@img/catalog5.png" alt="catalog item image" class="catalog__image">
-        </div>
-      </li>
-      <li class="catalog__item">
-        <div class="catalog__description">
-          <p class="catalog__position">Лучшее предложение</p>
-          <p class="catalog__feature">Обручальные кольца</p>
-        </div>
-        <div class="catalog__image-wrapper">
-          <img src="@img/catalog6.png" alt="catalog item image" class="catalog__image">
-        </div>
-      </li>
-    </ul>
+    <div class="swiper catalog__swiper catalog__container">
+      <!-- Additional required wrapper -->
+      <ul class="swiper-wrapper">
+        <!-- Slides -->
+        <li class="swiper-slide">
+          <div class="catalog__item">
+            <div class="catalog__description">
+              <p class="catalog__position">Украшения</p>
+              <p class="catalog__feature">С бриллиантами</p>
+            </div>
+            <div class="catalog__image-wrapper">
+              <img src="@img/catalog1.png" alt="catalog item image" class="catalog__image">
+            </div>
+          </div>
+        </li>
+        <li class="swiper-slide">
+          <div class="catalog__item">
+            <div class="catalog__description">
+              <p class="catalog__position">Новая коллекция</p>
+              <p class="catalog__feature">Серьги</p>
+            </div>
+            <div class="catalog__image-wrapper">
+              <img src="@img/catalog2.png" alt="catalog item image" class="catalog__image">
+            </div>
+          </div>
+        </li>
+        <li class="swiper-slide">
+          <div class="catalog__item">
+            <div class="catalog__description">
+              <p class="catalog__position">Браслеты</p>
+              <p class="catalog__feature">Из белого золота</p>
+            </div>
+            <div class="catalog__image-wrapper">
+              <img src="@img/catalog3.png" alt="catalog item image" class="catalog__image">
+            </div>
+          </div>
+        </li>
+        <li class="swiper-slide">
+          <div class="catalog__item">
+            <div class="catalog__description">
+              <p class="catalog__position">Восхитительные</p>
+              <p class="catalog__feature">Комплекты</p>
+            </div>
+            <div class="catalog__image-wrapper">
+              <img src="@img/catalog4.png" alt="catalog item image" class="catalog__image">
+            </div>
+          </div>
+        </li>
+        <li class="swiper-slide catalog__swiper-slide">
+          <div class="catalog__item">
+            <div class="catalog__description">
+              <p class="catalog__position">Уникальные</p>
+              <p class="catalog__feature">Броши</p>
+            </div>
+            <div class="catalog__image-wrapper">
+              <img src="@img/catalog5.png" alt="catalog item image" class="catalog__image">
+            </div>
+          </div>
+        </li>
+        <li class="swiper-slide">
+          <div class="catalog__item">
+            <div class="catalog__description">
+              <p class="catalog__position">Лучшее предложение</p>
+              <p class="catalog__feature">Обручальные кольца</p>
+            </div>
+            <div class="catalog__image-wrapper">
+              <img src="@img/catalog6.png" alt="catalog item image" class="catalog__image">
+            </div>
+          </div>
+        </li>
+      </ul>
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev catalog__swiper-prev"></div>
+      <div class="swiper-button-next catalog__swiper-next"></div>
+    </div>
   </div>
+  <a href="#" class="button catalog__button" target="_blank" rel="noreferrer noopener">Смотреть все</a>
 </section>
