@@ -15,46 +15,7 @@
     <!-- !каталог -->
     @@include('./htmlParts/components/Catalog/_Catalog.html')
     <!-- !новинки -->
-    <section class="new-positions">
-      <div class="container">
-        <div class="new-positions__heading-wrapper">
-          @@include('./htmlParts/components/Heading/_heading_section.html',{
-          "title":"Новинки"
-          })
-        </div>
-        <ul class="new-positions__wrapper">
-          <li class="new-positions__item">
-            <div class="card-new card-new_regular">
-              <div class="card-new__heading">
-                <p>Название</p>
-                <p>коллекции</p>
-              </div>
-            </div>
-          </li>
-          <li class="new-positions__item">
-            <div class="card-new card-new_big">
-              <div class="card-new__heading">
-                <p>Название</p>
-                <p>коллекции</p>
-              </div>
-            </div>
-          </li>
-          <li class="new-positions__item">
-            <div class="card-new card-new_regular">
-              <div class="card-new__heading">
-                <p>Название</p>
-                <p>коллекции</p>
-              </div>
-            </div>
-          </li>
-        </ul>
-        <div class="new-positions__button-wrapper">
-          @@include('./htmlParts/components/button/button.html',{
-          "title": "Все новинки",
-          })
-        </div>
-      </div>
-    </section>
+    @@include('./htmlParts/components/New-positions/New-positions.html')
 
     <!-- !распродажа -->
 

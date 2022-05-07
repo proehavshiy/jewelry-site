@@ -16,3 +16,6 @@ promoSwiper()
 import catalogSwiper from '../htmlParts/components/Catalog/Catalog.js';
 catalogSwiper()
 
+import newPositionsSwiper from '../htmlParts/components/New-positions/New-positions.js';
+newPositionsSwiper()
+
