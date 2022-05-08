@@ -21,9 +21,11 @@ export function burgerMenu(burgerClass, popupClass) {
   menu.addEventListener('click', (e) => {
     if (e.target === e.currentTarget) {
       menu.classList.remove(CLASS_MENU_OPENED)
+      body.classList.remove('locked')
     }
     if (e.target.classList.contains(CLASS_CLOSEBTN)) {
       menu.classList.remove(CLASS_MENU_OPENED)
+      body.classList.remove('locked')
     }
   })
 
