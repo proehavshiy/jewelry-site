@@ -22,3 +22,6 @@ newPositionsSwiper()
 import bonusSwiper from '../htmlParts/components/Bonus/Bonus.js';
 bonusSwiper()
 
+import saleSwiper from '../htmlParts/components/Sale/Sale.js';
+saleSwiper()
+

@@ -18,9 +18,16 @@
     padding: 0 10px;
   }
 
-  // @media (max-width: $breakpoint480) {
-  //   max-width: none;
-  // }
+  @media (max-width: 425px) {
+    padding: 0px;
+  }
+
+  // container_static
+  &_static {
+    @media (max-width: 425px) {
+      padding: 0 10px;
+    }
+  }
 }
 
 // * Body
