@@ -1351,7 +1351,7 @@ body.locked {
           flex-flow: row-reverse;
 }
 
-.bonus__image > img {
+.bonus__image img {
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
@@ -3694,7 +3694,7 @@ button.swiper-pagination-bullet {
             flex-flow: column;
   }
 
-  .bonus__image > img {
+  .bonus__image img {
     width: 100%;
     max-height: 150px;
   }
