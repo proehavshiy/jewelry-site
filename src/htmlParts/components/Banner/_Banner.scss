@@ -23,6 +23,14 @@
   &_promo {
     flex-flow: row-reverse;
     padding: 94px 0; // 50 + 44 из-за картинки
+
+    @media (max-width: $breakpoint1280) {
+      padding: 59px 0;
+    }
+
+    @media (max-width: $breakpoint768) {
+      padding: 0 0 40px 0;
+    }
   }
 
   // .banner_bonus
@@ -56,13 +64,13 @@
     }
 
     @media (max-width: $breakpoint1280) {
-      width: 476px;
-      height: 301px;
+      width: 447px;
+      height: 330px;
     }
 
     @media (max-width: $breakpoint1024) {
-      width: 349px;
-      height: 226px;
+      width: 319px;
+      height: 248px;
 
       background-color: transparent;
     }
@@ -288,7 +296,7 @@
 
       margin: auto;
 
-      @media (max-width: $breakpoint1024) {
+      @media (max-width: $breakpoint1366) {
         max-width: 300px;
       }
 
@@ -314,6 +322,10 @@
       max-width: 583px;
 
       margin: 0 auto;
+
+      @media (max-width: $breakpoint1920) {
+        max-width: 446px;
+      }
 
       @media (max-width: $breakpoint1024) {
         max-width: 300px;
@@ -474,15 +486,19 @@
 
   &__button {
     @media (max-width: $breakpoint768) {
-      width: 196px;
-      align-self: center;
+      width: 196px !important;
+      align-self: center !important;
     }
 
     // banner__button_promo
     &_promo {
       @media (max-width: $breakpoint1366) {
-        font-size: 18px;
-        line-height: 116%;
+        font-size: 18px !important;
+        line-height: 116% !important;
+      }
+
+      @media (max-width: $breakpoint768) {
+        align-self: center !important;
       }
     }
 

@@ -10,7 +10,7 @@
       margin-right: 23px;
     }
 
-    @media (max-width: $breakpoint768) {
+    @media (max-width: $breakpoint1024) {
       margin-right: 15px;
     }
   }
@@ -31,7 +31,7 @@
         height: 18px;
       }
 
-      @media (max-width: $breakpoint768) {
+      @media (max-width: $breakpoint1024) {
         width: 11px;
         height: 11px;
       }
@@ -48,7 +48,7 @@
         height: 26px;
       }
 
-      @media (max-width: $breakpoint768) {
+      @media (max-width: $breakpoint1024) {
         width: 17px;
         height: 17px;
       }
@@ -70,7 +70,7 @@
         height: 45px;
       }
 
-      @media (max-width: $breakpoint768) {
+      @media (max-width: $breakpoint1024) {
         width: 30px;
         height: 30px;
       }

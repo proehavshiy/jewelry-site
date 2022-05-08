@@ -1,5 +1,9 @@
 .news {
 
+  @media (max-width: $breakpoint768) {
+    margin-bottom: 120px !important;
+  }
+
   // .news__heading-wrapper
 
   &__heading-wrapper {

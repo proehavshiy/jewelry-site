@@ -14,6 +14,14 @@
 
   &__heading-wrapper {
     margin-bottom: 64px;
+
+    @media (max-width: $breakpoint1280) {
+      margin-bottom: 37px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      margin-bottom: 2px;
+    }
   }
 
   // .bonus__wrapper
@@ -120,8 +128,20 @@
     &_sertificate {
       margin-top: -50px;
 
+      max-width: 680px;
+
+      @media (max-width: $breakpoint1366) {
+        max-width: 480px;
+      }
+
       @media (max-width: $breakpoint1280) {
         margin-top: -30px;
+
+        max-width: 380px;
+      }
+
+      @media (max-width: $breakpoint1024) {
+        max-width: 300px;
       }
 
       @media (max-width: $breakpoint768) {

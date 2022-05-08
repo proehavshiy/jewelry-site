@@ -4,12 +4,32 @@
 
   &__heading-wrapper {
     margin-bottom: 40px;
+
+    @media (max-width: $breakpoint1920) {
+      margin-bottom: 50px;
+    }
+
+    @media (max-width: $breakpoint1280) {
+      margin-bottom: 30px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      margin-bottom: 20px;
+    }
   }
 
   // .sale__swiper
 
   &__swiper {
     margin-bottom: 40px;
+
+    @media (max-width: $breakpoint1280) {
+      margin-bottom: 30px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      margin-bottom: 20px;
+    }
   }
 
   // .sale__card
@@ -170,15 +190,15 @@
   &__button {
     display: none;
 
-    align-self: center;
+    align-self: center !important;
 
-    background-color: $colorMint;
-    border: 1px solid $colorMint;
-    color: $colorBg;
+    background-color: $colorMint !important;
+    border: 1px solid $colorMint !important;
+    color: $colorBg !important;
 
     @media (max-width: 425px) {
-      font-size: 8px;
-      padding: 3px 15px;
+      font-size: 8px !important;
+      padding: 3px 15px !important;
     }
   }
 }
