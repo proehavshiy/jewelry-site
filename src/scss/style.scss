@@ -20,6 +20,7 @@
 @import'../htmlParts/components/Sale/Sale';
 @import'../htmlParts/components/About/About';
 @import'../htmlParts/components/News/News';
+@import'../htmlParts/components/ScrollUp/ScrollUp';
 @import'../htmlParts/components/Menu-popup/Menu-popup';
 @import'../htmlParts/components/Footer/Footer';
 
@@ -27,6 +28,11 @@
 @import '../../node_modules/swiper/swiper-bundle';
 
 // общие стили
+
+html {
+  scroll-behavior: smooth;
+}
+
 .button {
   align-self: flex-start;
 

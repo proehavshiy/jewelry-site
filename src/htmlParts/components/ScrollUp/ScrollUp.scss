@@ -1,0 +1,60 @@
+.scroll-up {
+  position: relative;
+  transition: $linkTransition;
+
+  // .scroll-up__button
+
+  &__button {
+    position: absolute;
+    top: 0;
+    right: 100px;
+
+    width: 68px;
+    height: 68px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(58, 62, 70, 0.7);
+    border-radius: 4px;
+    background-color: #fff;
+
+    cursor: pointer;
+    transition: $linkTransition;
+
+    & * {
+      transition: $linkTransition;
+    }
+
+    @media (max-width: $breakpoint1280) {
+      right: 50px;
+
+      width: 56px;
+      height: 56px;
+
+      & * {
+        width: 30px;
+      }
+    }
+
+    @media (max-width: $breakpoint768) {
+      right: 10px;
+
+      width: 36px;
+      height: 36px;
+
+      & * {
+        width: 15px;
+      }
+    }
+
+    &:hover {
+      border: 1px solid #F6D5CC;
+
+      & * {
+        stroke: #F6D5CC;
+      }
+    }
+  }
+}
