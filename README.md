@@ -3,6 +3,7 @@ Adaptive landing page was built with gulp and SCSS.
 * Miminified CSS, HTML, JS
 * WebP optimized images
 * Adaptive layouts
+* Desktop and mobile swipers via `swiper js`
 
 [Ready project](https://proehavshiy.github.io/jewelry-site/)
 <br/>
