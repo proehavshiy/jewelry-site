@@ -7,8 +7,8 @@ import catalogSwiper from '../htmlParts/components/Catalog/Catalog.js';
 import newPositionsSwiper from '../htmlParts/components/New-positions/New-positions.js';
 import bonusSwiper from '../htmlParts/components/Bonus/Bonus.js';
 import saleSwiper from '../htmlParts/components/Sale/Sale.js';
-import toggleFooterAdresses from '../htmlParts/components/Footer/Footer.js';
 
+import toggleFooterAdresses from '../htmlParts/components/Footer/Footer.js';
 import enableScrollUp from '../htmlParts/components/ScrollUp/ScrollUp.js';
 
 // подключение бургера

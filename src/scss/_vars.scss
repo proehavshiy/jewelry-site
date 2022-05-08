@@ -27,15 +27,5 @@ $colorGrey: #CECBCB;
 $linkTransition: all .3s ease;
 $cycledLinearAnimation: .8s infinite linear;
 
-
-// * Header & Burger menu options
-$burgerBreakpoint: $breakpoint1024;
-$burgerColor: $colorBg;
-$burgerColor_active: $colorDark;
-$burgerFontColor_active: $colorDark;
-$burgerButtonColor: $colorDark;
-$burgerButtonColor_active: $colorDark;
-$headerPosition: relative; // fixed or relative
-
 // * Mixins
 @import"./mixins";

@@ -30,6 +30,12 @@
   }
 }
 
+// общие стили
+
+html {
+  scroll-behavior: smooth;
+}
+
 // * Body
 
 body {
@@ -44,32 +50,75 @@ body {
   }
 }
 
-// * Animations
-// * Fade
+.section-margin {
+  margin-bottom: 140px;
 
-@keyframes fade {
-
-  // для анимации табов
-  0% {
-    opacity: 0;
+  @media (max-width: $breakpoint1920) {
+    margin-bottom: 100px;
   }
 
-  100% {
-    opacity: 1;
+  @media (max-width: $breakpoint1366) {
+    margin-bottom: 90px;
+  }
+
+  @media (max-width: $breakpoint1280) {
+    margin-bottom: 85px;
+  }
+
+  @media (max-width: $breakpoint1024) {
+    margin-bottom: 50px;
+  }
+
+  @media (max-width: $breakpoint768) {
+    margin-bottom: 40px;
   }
 }
 
+.button {
+  align-self: flex-start;
 
-@keyframes cycledMove {
-  from {
-    transform: translate(0, 0);
+  padding: 10px 70px;
+  background-color: transparent;
+
+  font-size: 22px;
+  line-height: 118%;
+  text-align: center;
+
+  color: $colorDark;
+
+  border: 1px solid $colorDark;
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  cursor: pointer;
+  transition: $linkTransition;
+
+  // в свайпере
+  &_promo {
+    @media (max-width: $breakpoint1366) {
+      font-size: 18px;
+      line-height: 116%;
+    }
   }
 
-  50% {
-    transform: translate(3px, -1.5px);
+  &:hover {
+    background-color: $colorMint;
+    border: 1px solid $colorMint;
+    color: $colorBg;
   }
 
-  to {
-    transform: translate(0, 0);
+  @media (max-width: $breakpoint1280) {
+    font-size: 18px;
+    line-height: 116%;
+  }
+
+  @media (max-width: $breakpoint1024) {
+    padding: 8px 55px;
+  }
+
+  @media (max-width: $breakpoint768) {
+    padding: 6px 40px;
+    font-size: 14px;
+    line-height: 121%;
   }
 }

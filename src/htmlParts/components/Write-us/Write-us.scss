@@ -1,0 +1,50 @@
+.write-us {
+  width: 123px;
+  height: 123px;
+
+  position: fixed;
+  bottom: 10vh;
+  right: 5.2vw;
+
+  z-index: 999;
+  transition: $linkTransition;
+
+  border-radius: 50%;
+
+  background: #F6D5CC;
+
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+
+  text-align: center;
+
+  color: #FFFFFF;
+
+  @media (max-width: $breakpoint1366) {
+    font-size: 16px;
+  }
+
+  @media (max-width: $breakpoint1280) {
+    width: 92px;
+    height: 92px;
+
+    font-size: 14px;
+  }
+
+  @media (max-width: $breakpoint1024) {
+    width: 69px;
+    height: 69px;
+
+    font-size: 10px;
+  }
+
+  @media (max-width: $breakpoint768) {
+    display: none;
+  }
+
+  &:hover {
+    opacity: .8;
+    color: #3A3E46;
+  }
+}

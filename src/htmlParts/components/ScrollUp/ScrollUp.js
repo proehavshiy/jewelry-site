@@ -3,7 +3,5 @@ export default () => {
 
   scrollUpBtn.addEventListener('click', () => {
     window.scrollTo(scrollX, 0);
-
-    console.log('v:', window.scroll);
   })
 }

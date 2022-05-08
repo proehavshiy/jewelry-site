@@ -5,11 +5,6 @@ export default () => {
     modules: [Navigation, Autoplay, Grid],
 
     // * default parameters
-    // direction:	'horizontal' | 'vertical'
-    //enabled: false, // включен ли изначально слайдер
-
-
-
     loop: true,
     effect: 'creative', // Transition effect
     grabCursor: true,
@@ -19,13 +14,6 @@ export default () => {
     centeredSlides: true, // центрирование активного слайда
     spaceBetween: 100,
     speed: 1000, // скорость анимации смены слайдов
-    breakpoints: {
-      // when window width is >= 1024px
-      // 1024: {
-      //   enabled: true,
-      //   slidesPerView: 1
-      // }
-    },
 
     autoplay: {
       delay: 2000,
@@ -37,7 +25,6 @@ export default () => {
       rows: 1, // rows > 1 is currently not compatible with loop mode (loop: true)
       fill: 'column',
     },
-
 
     // Navigation arrows
     navigation: {
