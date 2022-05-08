@@ -4,7 +4,7 @@ Adaptive landing page was built with gulp and SCSS.
 * WebP optimized images
 * Adaptive layouts
 
-[Ready project](https://proehavshiy.github.io/landing_paymentOS/)
+[Ready project](https://proehavshiy.github.io/jewelry-site/)
 <br/>
 
 ## You can run this project locally:
