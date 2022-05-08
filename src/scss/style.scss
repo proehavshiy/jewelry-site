@@ -5,12 +5,32 @@
 @import "_vars";
 @import "_global";
 
+// * компоненты
+@import "_header";
+@import "../htmlParts/components/Search/Search";
+@import "../htmlParts/components/Nav-bar/Nav-bar";
+@import'../htmlParts/components/Heading/_heading';
+@import'../htmlParts/components/button/button.scss';
+@import'../htmlParts/components/Promo/Promo';
+@import'../htmlParts/components/DecorTabs/_DecorTabs.scss';
+@import'../htmlParts/components/Banner/Banner';
+@import'../htmlParts/components/Catalog/Catalog';
+@import'../htmlParts/components/New-positions/New-positions';
+@import'../htmlParts/components/Bonus/Bonus';
+@import'../htmlParts/components/Sale/Sale';
+@import'../htmlParts/components/About/About';
+@import'../htmlParts/components/News/News';
+@import'../htmlParts/components/Menu-popup/Menu-popup';
+@import'../htmlParts/components/Footer/Footer';
 
-// * Libs
-//@import "../../node_modules/bootstrap/scss/bootstrap";
+// swiper
+@import '../../node_modules/swiper/swiper-bundle';
 
-
-// * Main SCSS Content
+// общие стили
+// main
+.main {
+  margin-bottom: 144px;
+}
 
 .button {
   align-self: flex-start;
@@ -84,93 +104,3 @@
     margin-bottom: 40px;
   }
 }
-
-//*
-
-// * компоненты
-// кнопка
-// @import"../htmlParts/components/button/button";
-// @import"../htmlParts/components/Grid-for-cards/Grid-for-cards";
-// @import "../htmlParts/components/Card-with-image/card-with-image";
-// @import"../htmlParts/components/Social-bar/Social-bar";
-
-// * Sections SCSS files imports
-@import "_header";
-@import "../htmlParts/components/Search/Search";
-@import "../htmlParts/components/Nav-bar/Nav-bar";
-
-@import '_header-burger';
-// @import '_swiper';
-@import'../htmlParts/components/Heading/_heading';
-@import'../htmlParts/components/button/button.scss';
-@import'../htmlParts/components/Promo/Promo';
-@import'../htmlParts/components/DecorTabs/_DecorTabs.scss';
-@import'../htmlParts/components/Banner/Banner';
-@import'../htmlParts/components/Catalog/Catalog';
-@import'../htmlParts/components/New-positions/New-positions';
-@import'../htmlParts/components/Bonus/Bonus';
-@import'../htmlParts/components/Sale/Sale';
-
-@import'../htmlParts/components/Menu-popup/Menu-popup';
-
-@import'../htmlParts/components/Footer/Footer';
-// @import"_footer";
-
-// @import '../../node_modules/swiper/swiper.scss';
-@import '../../node_modules/swiper/swiper-bundle';
-// @import '../../node_modules/swiper/modules/navigation/navigation.scss';
-
-//! main
-
-.main {
-  margin-bottom: 144px;
-}
-
-// promo
-
-
-
-// новинки
-
-
-
-
-
-
-// распродажа
-
-
-
-
-
-
-
-// ! bonus
-
-
-
-
-// ! about
-
-.about {
-  margin-bottom: 140px;
-}
-
-// ! news
-
-.news {
-  margin-bottom: 144px;
-
-  // .news__heading-wrapper
-
-  &__heading-wrapper {
-    margin-bottom: 40px;
-  }
-
-  // .news__wrapper
-
-  &__wrapper {}
-}
-
-
-// ! footer

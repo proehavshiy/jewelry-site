@@ -256,6 +256,22 @@
     &>*:not(:last-child) {
       margin-bottom: 20px;
     }
+
+    // footer__adresses_list
+
+    &_list {
+      transition: $linkTransition;
+
+      @media (max-width: $breakpoint768) {
+        display: none;
+      }
+    }
+
+    // footer__adresses_opened
+
+    &_opened {
+      display: block;
+    }
   }
 
   // .footer__adress
@@ -274,6 +290,22 @@
 
       &>*:not(:last-child) {
         margin-bottom: 10px;
+      }
+    }
+  }
+
+  //footer__adresses-heading
+
+  &__adresses-heading {
+
+    &>span {
+      display: none;
+
+      cursor: pointer;
+
+      @media (max-width: $breakpoint768) {
+        display: inline;
+        margin-left: 10px;
       }
     }
   }

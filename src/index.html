@@ -16,54 +16,21 @@
     @@include('./htmlParts/components/Catalog/_Catalog.html')
     <!-- !новинки -->
     @@include('./htmlParts/components/New-positions/New-positions.html')
-
     <!-- !распродажа -->
-
     @@include('./htmlParts/components/Sale/Sale.html')
-
     <!-- !бонусная программа -->
-
     @@include('./htmlParts/components/Bonus/Bonus.html')
-
     <!-- !about -->
-
-    <section class="about">
-      <div class="container">
-        @@include('./htmlParts/components/Banner/_Banner_bonus.html',{})
-      </div>
-    </section>
-
+    @@include('./htmlParts/components/About/About.html')
     <!--!новости -->
-
-    <section class="news">
-      <div class="container">
-        <div class="news__heading-wrapper">
-          @@include('./htmlParts/components/Heading/_heading_section.html',{
-          "title":"Новости"
-          })
-        </div>
-        <div class="news__wrapper">
-          @@include('./htmlParts/components/Banner/_Banner_news.html',{})
-        </div>
-      </div>
-    </section>
-
+    @@include('./htmlParts/components/News/News.html')
     <!-- ! decor tabs -->
     @@include('./htmlParts/components/DecorTabs/_DecorTabs.html',{})
-
   </main>
   @@include('./htmlParts/components/Footer/Footer.html')
-
   <!-- ! мобильное меню -->
   @@include('./htmlParts/components/Menu-popup/Menu-popup.html')
 
-  <!-- @@include('htmlParts/_header-burger.html') -->
-
-  <!-- Footer -->
-  <!-- @@include('htmlParts/_footer.html') -->
-
-  <!-- Modal -->
-  <!-- @@include('htmlParts/_modal.html') -->
   <script src="js/app.min.js"></script>
 </body>
 
